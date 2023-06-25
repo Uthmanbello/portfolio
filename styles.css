@@ -24,10 +24,6 @@ a {
   color: #ffc107;
 }
 
-.blue {
-  color: #2962FF;
-}
-
 .size1 {
   font-size: 1.5em;
 }
@@ -43,6 +39,10 @@ a {
 
 .center {
   text-align: center;
+}
+
+.caps {
+  text-transform: uppercase;
 }
 
 .nav-bar {
@@ -211,16 +211,90 @@ a {
   padding: 10px;
 }
 
-.sub-heading {
-  border-right: 2px solid;
-  white-space: nowrap;
-  overflow: hidden;
-  width: fit-content;
-  padding-right: 4px;
-}
-
 .text {
   font-family: "Rubik", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 400;
+}
+
+
+.cards {
+  background-color: #ffc10791;
+  padding: 16px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 30px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: rgba(255, 193, 7, 0.226);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card-description {
+  margin-top: 8px;
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
+}
+
+.card-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.card-link:hover {
+  background-color: #0039CB;
+}
+
+.tech {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5vw;
+  height: 30px;
+}
+
+.tech span {
+  border: 1px dashed #ffc107;
+  background-color: #ffc10744;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-size: 1em;
+}
+
+.color-change {
+  transition: color 0.3s ease;
 }
