@@ -330,3 +330,22 @@ a {
 .languages-icon {
   width: 60px;
 }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding-left: 10px;
+}
+
+.skills span {
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
