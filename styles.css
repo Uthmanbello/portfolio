@@ -207,10 +207,20 @@ a {
   padding-right: 4px;
 }
 
+.projects {
+  padding: 10px;
+}
+
 .sub-heading {
-  border-right: 2px solid #333333;
+  border-right: 2px solid;
   white-space: nowrap;
   overflow: hidden;
   width: fit-content;
   padding-right: 4px;
+}
+
+.text {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
 }
