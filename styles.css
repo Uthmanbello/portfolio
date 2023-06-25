@@ -229,7 +229,7 @@ a {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   background-color: rgba(255, 193, 7, 0.226);
   margin-bottom: 2vh;
@@ -306,4 +306,26 @@ a {
 
 .color-change {
   transition: color 0.3s ease;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.languages p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px
+}
+
+.languages-icon {
+  width: 60px;
 }
