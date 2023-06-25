@@ -1,37 +1,44 @@
-const textElement = document.getElementById('typewriter-text');
-const texts = ["Developer"];
-let textIndex = 0;
-let index = 0;
-let isDeleting = false;
-let displayText = '';
-
-function type() {
-  const currentText = texts[textIndex];
-
-  if (isDeleting) {
-    displayText = currentText.substring(0, displayText.length - 1);
-  } else {
-    displayText = currentText.substring(0, displayText.length + 1);
-  }
-
-  textElement.innerHTML = displayText;
-
-  const typingSpeed = isDeleting ? 50 : 150;
-  let delay = typingSpeed;
-
-  if (!isDeleting && displayText === currentText) {
-    isDeleting = true;
-    delay = 500;
-  } else if (isDeleting && displayText === '') {
-    isDeleting = false;
-    textIndex++;
-    if (textIndex >= texts.length) {
-      textIndex = 0;
+class Typewriter {
+    constructor(elementId, texts) {
+      this.textElement = document.getElementById(elementId);
+      this.texts = texts;
+      this.textIndex = 0;
+      this.isDeleting = false;
+      this.displayText = '';
     }
-    delay = 1500;
+
+    type() {
+      const currentText = this.texts[this.textIndex];
+
+      if (this.isDeleting) {
+        this.displayText = currentText.substring(0, this.displayText.length - 1);
+      } else {
+        this.displayText = currentText.substring(0, this.displayText.length + 1);
+      }
+
+      this.textElement.innerHTML = this.displayText;
+
+      const typingSpeed = this.isDeleting ? 50 : 150;
+      let delay = typingSpeed;
+
+      if (!this.isDeleting && this.displayText === currentText) {
+        this.isDeleting = true;
+        delay = 500;
+      } else if (this.isDeleting && this.displayText === '') {
+        this.isDeleting = false;
+        this.textIndex++;
+        if (this.textIndex >= this.texts.length) {
+          this.textIndex = 0;
+        }
+        delay = 1500;
+      }
+
+      setTimeout(() => this.type(), delay);
+    }
   }
 
-  setTimeout(type, delay);
-}
+  const typewriter1 = new Typewriter('element1', ["Developer"]);
+  const typewriter2 = new Typewriter('element2', ["Projects"]);
 
-type();
+  typewriter1.type();
+  typewriter2.type();
