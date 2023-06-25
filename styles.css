@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .dark-grey {
   color: #333333;
 }
@@ -128,6 +132,24 @@ body {
   transition: transform 0.3s ease;
 }
 
+.menu-content {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4vw;
+  gap: 8vh;
+}
+
+.menu-content a {
+  font-size: 2em;
+  color: #000;
+}
+
+.menu-content a img {
+  width: 30px;
+  margin-right: 10px;
+}
+
 #menu-overlay.active #menu-content {
   transform: translateX(0);
 }
@@ -166,11 +188,6 @@ body {
 .socials-icon {
   width: 6vh;
 }
-
-/* .email {
-  width: 6vh;
-  z-index: 1;
-} */
 
 .icon-circle {
   background-color: #ffc107;
