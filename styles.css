@@ -296,7 +296,7 @@ a {
 .tech span {
   border: 1px dashed #ffc107;
   background-color: #ffc10744;
-  border-radius: 6px;
+  border-radius: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,6 +333,7 @@ a {
 
 .skills {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2vw;
   padding-left: 10px;
@@ -348,4 +349,47 @@ a {
   justify-content: center;
   align-items: center;
   min-width: 50px;
+}
+
+.contact {
+  background-color: #ffc10725;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.form {
+  background-color: #ffffffcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.field {
+  width: 70vw;
+  height: 5vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #ffffffcc;
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.field:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.submit-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
 }

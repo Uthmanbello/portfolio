@@ -68,10 +68,11 @@
 
   <section class="projects">
     <h2 class="size2 center color-change">Projects</h2>
-    <p class="text">I can help you build a product, feature, or website. Take a look at some of my work and experience! If you like what you see and have a project that needs coding, don't hesitate to contact me.</p>
+    <p class="center text">I can help you build a product, feature, or website. Take a look at some of my work and experience! If you like what you see and have a project that needs coding, don't hesitate to contact me.</p>
     
     <div class="cards"></div>
   </section>
+
   <section class="languages">
     <h2 class="size2 center color-change">Languages</h2>
     <div class="languages-list">
@@ -101,6 +102,25 @@
       <span>Problem Management</span>
       <span>Dev Tools</span>
       <span>Engineering</span>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div>
+      <h2 class="size2 center color-change">Contact</h2>
+      <p class="center">
+        If you have an application you are interested in developing, a feature that you need built or a
+        project that needs coding. I&apos;d love to help with it
+      </p>
+      <form action="https://formspree.io/f/xlevqnng" method="post" class="form" id="form">
+        <label for="name" class="label"><input type="text" class="field" id="name" placeholder="Full name" maxlength="30" name="username" required /></label>
+        <label for="emailid" class="label"><input type="email" class="field" id="emailid" placeholder="example@xyz.com" name="email" required /></label>
+        <label for="message" class="label"><textarea class="field" id="message" placeholder="Write your message here" maxlength="500" cols="10"
+            rows="30" name="message" required></textarea>
+        </label>
+        <button class="center card-button" type="submit">Get in touch</button>
+        <p class="validation-message d-none"></p>
+      </form>
     </div>
   </section>
 </body>
