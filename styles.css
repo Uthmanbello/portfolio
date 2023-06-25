@@ -1,5 +1,36 @@
 * {
   box-sizing: border-box;
+  color: #333333;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.dark-grey {
+  color: #333333;
+}
+
+.light-grey {
+  color: #F0F0F0;
+}
+
+.blue {
+  color: #2962FF;
+}
+
+.size1 {
+  font-size: 1.5em;
+}
+
+.size2 {
+  font-size: 2em;
+}
+
+.size3 {
+  font-size: 2.4em;
+  font-weight: 900;
+}
+
+.center {
+  text-align: center;
 }
 
 body {
@@ -7,6 +38,38 @@ body {
   padding: 0;
 }
 
-.profile-pic {
+.profile {
+  background-image: url('images/profile-pic.png');
+  height: 100vh;
   width: 100vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social-media {
+  background-color: #ffffffc7;
+  display: flex;
+  gap: 2vw;
+}
+
+.socials-icon {
+  width: 6vh;
+}
+
+.email {
+  width: 4vh;
+  z-index: 1;
+}
+
+.icon-circle {
+  background-color: #2962FF;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }
