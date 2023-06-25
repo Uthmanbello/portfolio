@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
-  color: #333333;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .dark-grey {
@@ -10,6 +14,10 @@
 
 .light-grey {
   color: #F0F0F0;
+}
+
+.yellow {
+  color: #ffc107;
 }
 
 .blue {
@@ -33,10 +41,97 @@
   text-align: center;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffffffd7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
 }
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  width: 50px;
+  height: 40px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  width: 25px;
+  border: 2px solid #ffc107;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon.active {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.nav-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.nav-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#menu-overlay {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  gap: 0;
+  width: 100%;
+  transition: 0.3s;
+  margin-left: 0;
+  display: block;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  transition: left 0.3s ease;
+}
+
+#menu-overlay.active {
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  left: 0;
+  background-color: #ffffffd7;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin-top: -2px;
+  z-index: 999;
+}
+
+#menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+#menu-overlay.active #menu-content {
+  transform: translateX(0);
+}
+
 .greeting {
   margin-top: 10vh;
 }
@@ -47,10 +142,11 @@ body {
 }
 
 .role {
-  margin-bottom: 10vh;
+  margin-bottom: 12vh;
 }
+
 .profile {
-  background-image: url('images/profile-pic.png');
+  background-image: url('images/profile-pic(1).png');
   height: 48vh;
   width: 100vw;
   background-repeat: no-repeat;
@@ -63,7 +159,7 @@ body {
 .social-media {
   background-color: #ffffffc7;
   display: flex;
-  gap: 2vw;
+  gap: 4vw;
   padding-bottom: 2vh;
 }
 
@@ -71,13 +167,13 @@ body {
   width: 6vh;
 }
 
-.email {
-  width: 4vh;
+/* .email {
+  width: 6vh;
   z-index: 1;
-}
+} */
 
 .icon-circle {
-  background-color: #2962FF;
+  background-color: #ffc107;
   border-radius: 50%;
   height: 44px;
   width: 44px;
@@ -87,7 +183,7 @@ body {
 }
 
 .typewriter-text {
-  border-right: 2px solid #2962FF;
+  border-right: 2px solid #ffc107;
   white-space: nowrap;
   overflow: hidden;
   width: fit-content;
