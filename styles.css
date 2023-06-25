@@ -21,7 +21,7 @@
 }
 
 .size2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .size3 {
@@ -38,8 +38,12 @@ body {
   padding: 0;
 }
 
+.greeting {
+  margin-top: 5vh;
+}
+
 .profile {
-  background-image: url('images/profile-pic.png');
+  background-image: url('images/portfolio.png');
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
