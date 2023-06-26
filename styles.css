@@ -45,6 +45,22 @@ a {
   text-transform: uppercase;
 }
 
+.toggle-section + * {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.0s ease;
+}
+
+.toggle-section.active + * {
+  max-height: 1000px;
+  transition: max-height 1.0s ease;
+}
+
+.play {
+  width: 25px;
+  margin-right: 20px;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
