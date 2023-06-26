@@ -117,15 +117,10 @@ for (let index = 0; index < projectButtons.length; index++) {
       projDecscription.textContent = projectArr[index].description;
       liveButton.setAttribute('href', projectArr[index].live);
       sourceButton.setAttribute('href', projectArr[index].source);
-      
-      // for (let i = 0; i < images.length; i++) {
-      //   images[i].src = projectArr[index].pop_mob_image[i];
-      // }
 
       for (let i = 0; i < images.length; i++) {
         images[i].style.backgroundImage = `url(${projectArr[index].pop_mob_image[i]})`;
       }
-      
       
       popup.classList.add('show')
       document.body.style.overflowY = 'hidden';

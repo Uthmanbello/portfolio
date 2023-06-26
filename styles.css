@@ -721,6 +721,13 @@ about-desc {
   padding-bottom: 2vh;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 5vw;
+}
+
 .aboutd {
   display: flex;
   justify-content: space-around;
@@ -733,11 +740,19 @@ about-desc {
 .skill-setd {
   display: flex;
   flex-direction: column;
-  line-height: 0.5em;
+  /* line-height: 0.5em; */
+}
+
+.languages-list {
+  gap: 0.5vw;
 }
 
 .skills-container {
   width: 40vw;
+}
+
+.skills {
+  gap: 0.5vw;
 }
 
 .contactd {
