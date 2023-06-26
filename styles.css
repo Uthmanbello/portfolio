@@ -720,13 +720,20 @@ about-desc {
   padding-bottom: 2vh;
 }
 
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cards {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   height: 80vh;
-  gap: 10vw;
+  width: 80vw;
+  gap: 8vw;
   background-color: #ffc1076b;
   border-radius: 20px;
 }
