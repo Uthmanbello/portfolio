@@ -618,3 +618,42 @@ about-desc {
   opacity: 1;
   visibility: visible;
 }
+
+.desk-none {
+  visibility: visible;
+}
+
+.mob-none {
+  visibility: hidden;
+}
+
+@media only screen and (min-device-width: 768px) {
+.desk-none {
+  visibility: hidden;
+}
+
+.mob-none {
+  visibility: visible;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  padding-right: 20vw;
+}
+
+.nav-items a {
+  flex-basis: 25%;
+  color: #000;
+}
+
+.nav-items a:nth-child(2) {
+  flex-basis: 50%;
+}
+}
