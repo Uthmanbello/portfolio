@@ -201,16 +201,17 @@ button:active {
 
 .name {
   line-height: 6vh;
-  margin-bottom: 10vh;
+  margin-bottom: -3vh;
 }
 
 .role {
-  margin-bottom: 12vh;
+  font-size: 1.5em;
+  margin-top: 6vh;
 }
 
 .profile {
   background-image: url('images/profile-pic(1).png');
-  height: 48vh;
+  height: 60vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
@@ -264,8 +265,7 @@ button:active {
 }
 
 .text {
-  font-size: 1.2em;
-  font-weight: 400;
+  font-size: 1em;
 }
 
 
@@ -448,10 +448,6 @@ about-desc {
   margin-left: -10px;
 }
 
-.contact-desc {
-  font-size: 1em;
-}
-
 .form {
   background-color: #ffffffcc;
   display: flex;
@@ -502,14 +498,14 @@ about-desc {
   width: 100vw;
   height: 100vh;
   background-color: #2c2c2cd0;
-  overflow-y: hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 7vh;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  z-index: 1001;
 }
 
 .popup-content {
