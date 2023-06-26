@@ -644,9 +644,19 @@ about-desc {
   display: block;
 }
 
-.nav-bar {
+.nav-bar-d {
   display: flex;
   align-items: center;
+  background-color: #ffffffa1;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
 .nav-items {
@@ -720,10 +730,16 @@ about-desc {
   padding-bottom: 2vh;
 }
 
+.toggle-section:hover {
+  cursor: pointer;
+}
+
 .cards-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .cards {
@@ -736,6 +752,8 @@ about-desc {
   gap: 8vw;
   background-color: #ffc1076b;
   border-radius: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .card {
@@ -754,6 +772,47 @@ about-desc {
 
 .project-card .tech {
   gap: 1vw;
+} 
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.left-arrow {
+  left: 40px;
+}
+
+.right-arrow {
+  right: 40px;
+}
+
+.arrow:hover {
+  background-color: #ffca28;
+}
+
+.left-arrow.disabled {
+  color: red;
+}
+
+.right-arrow.disabled {
+  color: red;
 }
 
 .aboutd {
