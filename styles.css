@@ -525,13 +525,33 @@ about-desc {
 .popup-images {
   display: flex;
   transition: transform 0.3s ease;
-  gap:10vw;
 }
 
 .popup-image {
   flex: 0 0 100%;
   width: 100%;
-  height: auto;
+  height: 50vh;
+  max-height: 50vh;
+}
+
+.popup-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.popup-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #999;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-dot.active {
+  background-color: #555;
 }
 
 .popup-desc {
