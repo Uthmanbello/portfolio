@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+button:active {
+  border: red;
+}
+
 .dark-grey {
   color: #333333;
 }
@@ -222,6 +226,13 @@ a {
   padding-bottom: 2vh;
 }
 
+.social-media-nav {
+  position: fixed;
+  bottom: 0;
+  padding-left: 8px;
+  background-color: transparent;
+}
+
 .socials-icon {
   width: 6vh;
 }
@@ -234,6 +245,10 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 1px;
+}
+
+.icon-circle-nav {
+  background-color: #000;
 }
 
 .typewriter-text {
