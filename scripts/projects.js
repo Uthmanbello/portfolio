@@ -3,6 +3,7 @@ const projectArr = [
       id: 0,
       title: 'De Royale Institute',
       image: 'images/Screenshot sec 1 desk(e).png',
+      pop_mob_image: ['images/DeRoyale1.png', 'images/DeRoyale2.png', 'images/DeRoyale3.png'], 
       desktopImage: 'images/Screenshot sec 1 desk(e).png',
       description: 'A web/mobile app for a tech institute which offers different couses annually',
       technologies: ['html', 'css', 'javascript'],
@@ -65,7 +66,7 @@ const projectArr = [
       image: 'images/Screenshot Space Traveller portfolio.png',
       desktopImage: 'images/Screenshot Space Traveller portfolio.png',
       description: "Space Travellers' Hub is a project where we worked with real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
-      technologies: ['html', 'css', 'javascript'],
+      technologies: ['html', 'react/redux', 'javascript'],
       live: 'https://space-travellers-hub-ns1r.onrender.com/',
       source: 'https://github.com/Uthmanbello/react_group_project'
   }
@@ -99,31 +100,31 @@ cards.innerHTML = html;
 const projectButtons = document.querySelectorAll('.card-button');
 
 for (let index = 0; index < projectButtons.length; index++) {
-    projectButtons[index].addEventListener('click', () => {
-        const title = popup.querySelector('.popup-title');
-        const tech1 = popup.querySelector('.tech1')
-        const tech2 = popup.querySelector('.tech2')
-        const tech3 = popup.querySelector('.tech3')
-        const projDecscription = popup.querySelector('.popup-desc');
-        const liveButton = popup.querySelector('.see-live');
-        const sourceButton = popup.querySelector('.see-source');
-        const img = popup.querySelector('.popup-image');
+  projectButtons[index].addEventListener('click', () => {
+      const title = popup.querySelector('.popup-title');
+      const tech1 = popup.querySelector('.tech1')
+      const tech2 = popup.querySelector('.tech2')
+      const tech3 = popup.querySelector('.tech3')
+      const projDecscription = popup.querySelector('.popup-desc');
+      const liveButton = popup.querySelector('.see-live');
+      const sourceButton = popup.querySelector('.see-source');
+      const images = popup.querySelectorAll('.popup-image');
 
-        title.textContent = projectArr[index].title;
-        tech1.textContent = projectArr[index].technologies[0];
-        tech2.textContent = projectArr[index].technologies[1];
-        tech3.textContent = projectArr[index].technologies[2];
-        projDecscription.textContent = projectArr[index].description;
-        liveButton.setAttribute('href', projectArr[index].live);
-        sourceButton.setAttribute('href', projectArr[index].source);
-
-        img.src = projectArr[index].image;
-        img.srcset = projectArr[index].desktopImage
-        
-        popup.classList.add('show')
-        document.body.style.overflowY = 'hidden';
-    })
-    
+      title.textContent = projectArr[index].title;
+      tech1.textContent = projectArr[index].technologies[0];
+      tech2.textContent = projectArr[index].technologies[1];
+      tech3.textContent = projectArr[index].technologies[2];
+      projDecscription.textContent = projectArr[index].description;
+      liveButton.setAttribute('href', projectArr[index].live);
+      sourceButton.setAttribute('href', projectArr[index].source);
+      
+      for (let i = 0; i < images.length; i++) {
+        images[i].src = projectArr[index].pop_mob_image[i];
+      }
+      
+      popup.classList.add('show')
+      document.body.style.overflowY = 'hidden';
+  }) 
 }
 
 const btnClosePopup = document.querySelector('.popup-close');
