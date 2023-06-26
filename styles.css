@@ -636,13 +636,13 @@ about-desc {
 }
 
 @media only screen and (min-device-width: 768px) {
-  
 .desk-none {
   display: none;
 }
 
 .mob-none {
   visibility: visible;
+  display: block;
 }
 
 .nav-bar {
@@ -719,6 +719,69 @@ about-desc {
   display: flex;
   gap: 4vw;
   padding-bottom: 2vh;
+}
+
+.contactd {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.contact-introd {
+  width: 70vw;
+}
+
+.contact-descd {
+  width: 100vw;
+}
+
+.contact-personald {
+  width: 25vw;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.personald {
+  background-color: #ffffffcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.form{
+  padding-top: 30px;
+}
+
+.form-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 16px 32px;
+  background-color: #ffc107;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.field {
+  width: 50vw;
+  height: 5vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #ffffffcc;
+  margin: 10px;
+  font-size: 1.1em;
 }
 
 .footer-bar {
