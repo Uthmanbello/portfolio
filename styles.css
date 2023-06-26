@@ -723,9 +723,33 @@ about-desc {
 
 .cards {
   display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  gap: 5vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
 }
 
 .aboutd {
@@ -740,7 +764,6 @@ about-desc {
 .skill-setd {
   display: flex;
   flex-direction: column;
-  /* line-height: 0.5em; */
 }
 
 .languages-list {
