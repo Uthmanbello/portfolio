@@ -567,10 +567,6 @@ about-desc {
   padding: 10px;
 }
 
-.tech1, tech2, tech3 {
-  background-color: #ffc107;
-}
-
 .popup-btns {
   display: flex;
   flex-direction: row;
@@ -585,6 +581,11 @@ about-desc {
   border: none;
   padding: 10px;
   border-radius: 6px;
+}
+
+.popup-icon {
+  max-width: 2vh;
+  width: 2vh;
 }
 
 .lang-popup {
