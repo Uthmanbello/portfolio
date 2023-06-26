@@ -48,17 +48,34 @@ a {
 .toggle-section + * {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.0s ease;
+  transition: max-height 1.5s ease, text-align 5s ease;
+  text-align: center;
 }
 
 .toggle-section.active + * {
-  max-height: 1000px;
-  transition: max-height 1.0s ease;
+  max-height: 900vh;
+  transition: max-height 5.0s ease, text-align 5s ease;
+}
+
+.toggle-section {
+  text-align: left;
+  transition: text-align 3s ease;
 }
 
 .play {
   width: 25px;
   margin-right: 20px;
+}
+
+.toggle-section.active .play {
+  transform: rotate(90deg);
+  transition: transform ease 1.0s;
+  text-align: left;
+}
+
+.toggle-section:not(.active) .play {
+  transform: rotate(0deg);
+  transition: transform ease 1.0s;
 }
 
 .nav-bar {
@@ -331,6 +348,10 @@ a {
   flex-direction: column;
 }
 
+.languages h2 {
+  margin-left: 10px;
+}
+
 .languages-list {
   display: flex;
   justify-content: center;
@@ -372,6 +393,10 @@ a {
   background-color: #ffc10725;
   padding: 20px;
   margin-top: 20px;
+}
+
+.contact h2{
+  margin-left: -10px;
 }
 
 .contact-desc {
