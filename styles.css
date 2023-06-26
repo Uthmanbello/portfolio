@@ -92,6 +92,10 @@ a {
   z-index: 1000;
 }
 
+.logo {
+  color: #000;
+}
+
 .nav-icon {
   display: flex;
   flex-direction: column;
@@ -322,7 +326,7 @@ a {
 
 .tech {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 5vw;
   height: 30px;
