@@ -5,7 +5,7 @@ const projectArr = [
       image: 'images/Screenshot sec 1 desk(e).png',
       desktopImage: 'images/Screenshot sec 1 desk(e).png',
       description: 'A web/mobile app for a tech institute which offers different couses annually',
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/Capstone1/',
       source: 'https://github.com/Uthmanbello/Capstone1'
   },
@@ -15,7 +15,7 @@ const projectArr = [
       image: 'images/Screenshot 100 series app portfolio(1).png',
       desktopImage: 'images/Screenshot 100 series app portfolio(1).png',
       description: "A single page application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/capstone2/dist',
       source: 'https://github.com/Uthmanbello/capstone2'
   },
