@@ -87,26 +87,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   startSwipeInterval();
 });
-
-const cardsContainer = document.querySelector('.cards');
-const dotsContainer = document.querySelector('.dots-container');
-const dots = [];
-
-for (let i = 0; i < projectArr.length; i++) {
-  const dot = document.createElement('span');
-  dot.classList.add('dot');
-  dotsContainer.appendChild(dot);
-  dots.push(dot);
-}
-
-dots[0].classList.add('active');
-
-cardsContainer.addEventListener('scroll', () => {
-  const cardWidth = cardsContainer.offsetWidth;
-  const scrollPosition = cardsContainer.scrollLeft;
-  const activeIndex = Math.round(scrollPosition / cardWidth);
-
-  dots.forEach(dot => dot.classList.remove('active'));
-
-  dots[activeIndex].classList.add('active');
-});

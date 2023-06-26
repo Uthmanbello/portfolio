@@ -321,7 +321,6 @@ button:active {
 .card-description {
   margin-top: 8px;
   font-size: 1em;
-  font-family: "Rubik", sans-serif;
 }
 
 .card-button {
@@ -726,30 +725,28 @@ about-desc {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  height: 80vh;
+  gap: 10vw;
+  background-color: #ffc1076b;
+  border-radius: 20px;
 }
 
 .card {
   flex: 0 0 auto;
   scroll-snap-align: start;
+  width: 20vw;
 }
 
-.dots-container {
+.project-card {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20vw;
+  height: 70vh;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #bbb;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #333;
+.project-card .tech {
+  gap: 1vw;
 }
 
 .aboutd {
