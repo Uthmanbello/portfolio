@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uthman's Portfolio</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="scripts/typewriter.js" defer></script>
+  <script src="scripts/navbar.js" defer></script>
+  <script src="scripts/colorChange.js" defer></script>
+  <script src="scripts/projects.js" defer></script>
+  <script src="scripts/sections.js" defer></script>
+  <script src="scripts/scroller.js" defer></script>
+  <script src="scripts/resume.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;0,700;1,100&family=Lato:wght@400;700;900&family=Lobster&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="#home" class="logo size2">DeRoy<span class="yellow">@</span>le</a>
+    <div class="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div id="menu-overlay">
+    <div class="menu-content" id="menu-content">
+      <a href="#home"><img src="images/home.svg" class="menu-items">Home</a>
+      <a href="#about"><img src="images/about.png">About me</a>
+      <a href="#contact"><img src="images/contact.png">Contact</a>
+      <a href="#projects"><img src="images/projects.png">Projects</a>
+    </div>
+
+    <div class="social-media social-media-nav">
+      <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
+        <img src="images/twitter-black.svg" alt="twitter" class="socials-icon">
+      </a>
+      <a href="https://github.com/Uthmanbello" target="_blank">
+        <img src="images/github-black.svg" alt="github" class="socials-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
+        <img src="images/linkedin-black.svg" alt="linkedin" class="socials-icon">
+      </a>
+      <a href="https://wellfound.com/u/uthmanbelloimoukhuede" target="_blank">
+        <div class="icon-circle">
+          <img src="images/angellist.svg" alt="angellist" class="socials-icon icon-circle icon-circle-nav">
+        </div>
+      </a>
+      <a href="https://medium.com/@uthmanbello88" target="_blank">
+        <div class="icon-circle">
+          <img src="images/medium.svg" alt="medium" class="socials-icon icon-circle icon-circle-nav">
+        </div>
+      </a>
+      <a href="mailto:uthmanbelloimoukhuede@gmail.com" target="_blank">
+          <img src="images/email-black.png" alt="email" class="socials-icon">
+      </a>
+    </div>
+  </div>
+
+  <section id="home">
+    <p class="size1 yellow center greeting">Hi there, I&apos;m</p>
+    <h1 class="size3 center name">Uthman Igein<br>Bello-Imoukhuede</h1>
+    <h3 class="size2 center role">Full-Stack <span class="yellow typewriter-text" id="element1"></span></h3>
+    <div class="profile">
+      <div class="social-media">
+        <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
+          <img src="images/twitter(1).svg" alt="twitter" class="socials-icon">
+        </a>
+        <a href="https://github.com/Uthmanbello" target="_blank">
+          <img src="images/github(1).svg" alt="github" class="socials-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
+          <img src="images/linkedin(1).svg" alt="linkedin" class="socials-icon">
+        </a>
+        <a href="https://wellfound.com/u/uthmanbelloimoukhuede" target="_blank">
+          <div class="icon-circle">
+            <img src="images/angellist.svg" alt="angellist" class="socials-icon icon-circle">
+          </div>
+        </a>
+        <a href="https://medium.com/@uthmanbello88" target="_blank">
+          <div class="icon-circle">
+            <img src="images/medium.svg" alt="medium" class="socials-icon icon-circle">
+          </div>
+        </a>
+        <a href="mailto:uthmanbelloimoukhuede@gmail.com" target="_blank">
+            <img src="images/email(1).png" alt="email" class="socials-icon">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="size2 center color-change toggle-section"><img src="images/play.png" class="play">Projects</h2>
+    <div>
+      <p class="center text">I can help you build a product, feature, or website. Take a look at some of my work and experience! If you like what you see and have a project that needs coding, don't hesitate to contact me.</p>
+      
+      <div class="cards"></div>
+    </div>
+  </section>
+
+  <section class="languages" id="about">
+    <h2 class="size2 center color-change toggle-section"><img src="images/play.png" class="play">About Myself</h2>
+    <div>
+      <div class="about-div">
+        <div class="about">
+          <p class="center about-dec">Hello, I'm Uthman, a passionate full-stack developer with a strong focus on creating user-friendly web applications. With a solid foundation in front-end and back-end technologies, I strive to deliver innovative solutions that seamlessly merge functionality and aesthetics.</p>
+          <button class="center resume-button" type="button">Get my Resume</button>
+        </div>
+      </div>
+      <h2 class="center">Languages</h2>
+      <div class="languages-list">
+        <p><img src="images/html.svg" alt="html" class="languages-icon">HTML</p>
+        <p><img src="images/css.svg" alt="css" class="languages-icon">CSS</p>
+        <p><img src="images/javascript.svg" alt="javascript" class="languages-icon">JavaScript</p>
+        <p><img src="images/ruby.svg" alt="ruby" class="languages-icon">Ruby</p>
+        <p><img src="images/python.svg" alt="html" class="languages-icon">Python</p>
+      </div>
+
+      <h2 class="center">Frameworks</h2>
+      <div class="languages-list">
+        <p><img src="images/react.svg" alt="react" class="languages-icon">React</p>
+        <p><img src="images/redux.png" alt="redux" class="languages-icon">Redux</p>
+        <p><img src="images/ruby-on-rails.svg" alt="ruby-on-rails" class="languages-icon">Ruby on Rails</p>
+      </div>
+
+      <h2 class="center">Skills</h2>
+      <div class="skills">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>PostgreSQL</span>
+        <span>OOP</span>
+        <span>Pair-Programming</span>
+        <span>Data Structures</span>
+        <span>Algorithms</span>
+        <span>Problem Management</span>
+        <span>Dev Tools</span>
+        <span>Engineering</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div>
+      <h2 class="size2 center">Contact</h2>
+      <div>
+        <p class="center contact-desc">
+          If you have an application you are interested in developing, a feature that you need built or a
+          project that needs coding. I&apos;d love to help with it.
+        </p>
+        <form action="https://formspree.io/f/xlevqnng" method="post" class="form" id="form">
+          <label for="name" class="label"><input type="text" class="field" id="name" placeholder="Full name" maxlength="30" name="username" required /></label>
+          <label for="emailid" class="label"><input type="email" class="field" id="emailid" placeholder="example@xyz.com" name="email" required /></label>
+          <label for="message" class="label"><textarea class="field" id="message" placeholder="Write your message here" maxlength="500" cols="10"
+              rows="30" name="message" required></textarea>
+          </label>
+          <button class="center card-button form-button" type="submit">Get in touch</button>
+          <p class="validation-message d-none"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="popup">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h2 class="popup-title"></h2>
+          <img src="images/close.svg" class="popup-close">
+        </div>
+        <div class="popup-images-container">
+          <div class="popup-images">
+            <img src="" alt="project image" class="popup-image">
+            <img src="images/javascript.svg" alt="project image" class="popup-image">
+            <img src="images/python.svg" alt="project image" class="popup-image">
+          </div>
+        </div>
+        <div class="popup-dots">
+          <span class="popup-dot active"></span>
+          <span class="popup-dot"></span>
+          <span class="popup-dot"></span>
+        </div>
+        <div class="popup-info">
+          <p class="popup-desc"></p>
+          <div class="tech lang-popup">
+            <span class="tech1"></span>
+            <span class="tech2"></span>
+            <span class="tech3"></span>
+          </div>
+          <div class="popup-btns">
+              <a href="" class="see-live" target="_blank">
+                <button type="button" class="popup-btn">
+                  See live &nbsp;<img src="images/live.png" alt="see live" class="popup-icon">
+                </button>
+              </a>
+              <a href="" class="see-source" target="_blank">
+                <button type="button" class="popup-btn">
+                  See source&nbsp;<img src="images/git.svg" alt="see source" class="popup-icon">
+                </button>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
