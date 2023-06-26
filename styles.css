@@ -249,7 +249,6 @@ a {
 }
 
 .text {
-  font-family: "Rubik", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
@@ -347,6 +346,27 @@ a {
   transition: color 0.3s ease;
 }
 
+.about-div {
+  background-image: url('images/me.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  background-color: #ffffff56;
+  color: #000;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+about-desc {
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
+}
+
 .languages {
   display: flex;
   flex-direction: column;
@@ -404,7 +424,6 @@ a {
 }
 
 .contact-desc {
-  font-family: "Rubik", sans-serif;
   font-size: 1em;
 }
 
