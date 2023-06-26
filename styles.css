@@ -543,10 +543,16 @@ about-desc {
 }
 
 .popup-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 0 0 100%;
-  width: 72%;
-  height: auto;
+  width: 80vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .popup-dots {
   display: flex;
