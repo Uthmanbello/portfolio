@@ -475,7 +475,7 @@ about-desc {
 }
 
 .form-button {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 /* POPUP */
@@ -517,9 +517,21 @@ about-desc {
   width: 40px;
 }
 
+.popup-images-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.popup-images {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap:10vw;
+}
+
 .popup-image {
-  max-width: 80vw;
-  height: 100%;
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
 }
 
 .popup-desc {
