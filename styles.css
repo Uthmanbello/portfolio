@@ -550,6 +550,7 @@ about-desc {
   width: 80vw;
   height: 50vh;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
 }
 
