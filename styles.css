@@ -195,26 +195,28 @@ button:active {
   transform: translateX(0);
 }
 
-.greeting {
-  margin-top: 10vh;
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5vh;
 }
 
 .name {
   line-height: 6vh;
-  margin-bottom: -3vh;
 }
 
 .role {
   font-size: 1.5em;
-  margin-top: 6vh;
 }
 
 .profile {
   background-image: url('images/profile-pic(1).png');
-  height: 60vh;
+  height: 45vh;
   width: 100vw;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -267,7 +269,6 @@ button:active {
 .text {
   font-size: 1em;
 }
-
 
 .cards {
   background-color: #ffc10791;
