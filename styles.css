@@ -691,47 +691,12 @@ about-desc {
   flex-basis: 50%;
 }
 
-#home {
-  display: flex;
-  flex-direction: row-reverse;
+.toggle-section:hover {
+  cursor: pointer;
 }
 
 .profile {
-  background-image: url('images/profile-picd.png');
-  height: 100vh;
   width: 50vw;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.introd {
-  width: 50vw;
-  background-color: #ffffffc7;
-  margin-top: 16vh;
-}
-
-.greeting {
-  font-size: 2em;
-}
-
-.name {
-  font-size: 4em;
-  font-weight: 900;
-  line-height: 1.2em;
-}
-
-.social-media {
-  background-color: #ffffffc7;
-  display: flex;
-  gap: 4vw;
-  padding-bottom: 2vh;
-}
-
-.toggle-section:hover {
-  cursor: pointer;
 }
 
 .text {
@@ -858,7 +823,7 @@ about-desc {
 }
 
 .contact-descd {
-  width: 100vw;
+  width: 94vw;
 }
 
 .contact-personald {
