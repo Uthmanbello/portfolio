@@ -245,14 +245,14 @@ button:active {
 }
 
 .socials-icon {
-  width: 6vh;
+  width: 46px;
 }
 
 .icon-circle {
   background-color: #ffc107;
   border-radius: 50%;
-  height: 5.5vh;
-  width: 5.5vh;
+  height: 42px;
+  width: 42px;
   display: flex;
   justify-content: center;
   margin-top: 1px;
@@ -737,8 +737,9 @@ about-desc {
 }
 
 .icon-circle {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
+  margin-top: 2px;
 }
 
 .text {
@@ -800,7 +801,7 @@ about-desc {
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  background-color: #ffc107;
+  background-color: #ffc1079d;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -809,6 +810,7 @@ about-desc {
   font-size: 40px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border: 6px solid #fff;
 }
 
 .left-arrow {
@@ -820,7 +822,11 @@ about-desc {
 }
 
 .arrow:hover {
-  background-color: #ffca28;
+  background-color: #ffc928a9;
+}
+
+.arrow:active {
+  border: 2px dashed #ffc928;
 }
 
 .left-arrow.disabled {
@@ -933,7 +939,7 @@ about-desc {
 .footer-logo {
   background-color: #000;
   width: 20vw;
-  padding: 16px 28px;
+  padding: 20px 32px;
   padding-left: 14px;
   display: flex;
   justify-content: center;
