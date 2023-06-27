@@ -38,5 +38,7 @@ class Typewriter {
   }
 
   const typewriter1 = new Typewriter('element1', ["Developer"]);
+  const typewriter2 = new Typewriter('element2', ["Developer"]);
 
   typewriter1.type();
+  typewriter2.type();
