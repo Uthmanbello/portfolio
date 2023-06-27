@@ -734,6 +734,10 @@ about-desc {
   cursor: pointer;
 }
 
+.text {
+  font-size: 1.2em;
+}
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -754,6 +758,7 @@ about-desc {
   border-radius: 20px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  padding-left: 140px;
 }
 
 .card {
@@ -767,7 +772,7 @@ about-desc {
   flex-direction: column;
   justify-content: space-between;
   width: 20vw;
-  height: 70vh;
+  height: 73vh;
 }
 
 .project-card .tech {
@@ -858,8 +863,8 @@ about-desc {
 
 .contact-personald {
   width: 25vw;
-  height: 100%;
-  margin-top: 50px;
+  height: 60vh;
+  margin-top: 60px;
 }
 
 .personald {
@@ -870,6 +875,10 @@ about-desc {
   align-items: start;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding-left: 10px;
+}
+
+.personal-icon {
+  width: 2vw;
 }
 
 .bold {
