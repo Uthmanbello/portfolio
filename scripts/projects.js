@@ -102,26 +102,15 @@ const projectButtons = document.querySelectorAll('.card-button');
 for (let index = 0; index < projectButtons.length; index++) {
   projectButtons[index].addEventListener('click', () => {
       const title = popup.querySelector('.popup-title');
-      const tech1 = popup.querySelector('.tech1')
-      const tech2 = popup.querySelector('.tech2')
-      const tech3 = popup.querySelector('.tech3')
-      const projDecscription = popup.querySelector('.popup-desc');
       const liveButton = popup.querySelector('.see-live');
       const sourceButton = popup.querySelector('.see-source');
-      const images = popup.querySelectorAll('.popup-image');
+      const popupContent = popup.querySelector('.popup-content');
 
       title.textContent = projectArr[index].title;
-      tech1.textContent = projectArr[index].technologies[0];
-      tech2.textContent = projectArr[index].technologies[1];
-      tech3.textContent = projectArr[index].technologies[2];
-      projDecscription.textContent = projectArr[index].description;
+      popupContent.style.backgroundImage = `url('${projectArr[index].image}')`;
       liveButton.setAttribute('href', projectArr[index].live);
       sourceButton.setAttribute('href', projectArr[index].source);
 
-      for (let i = 0; i < images.length; i++) {
-        images[i].style.backgroundImage = `url(${projectArr[index].pop_mob_image[i]})`;
-      }
-      
       popup.classList.add('show')
       document.body.style.overflowY = 'hidden';
   }) 
