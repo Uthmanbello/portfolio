@@ -437,7 +437,7 @@ about-desc {
 .skills span {
   background-color: #ffc107;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 0.8em;
   border-radius: 20px;
   padding: 10px;
   display: flex;
@@ -647,7 +647,7 @@ about-desc {
 .nav-bar-d {
   display: flex;
   align-items: center;
-  background-color: #ffffffa1;
+  background-color: transparent;
   justify-content: space-between;
   padding: 10px;
   position: fixed;
@@ -657,6 +657,36 @@ about-desc {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   z-index: 1000;
+}
+
+.nav-bar-d a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-bar-d a:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: width 1s, background-color 0.3s;
+  transform-origin: left center;
+}
+
+.nav-bar-d a:not(:first-child):hover::before {
+  width: 100%;
+  background-color: #ffc107;
+  transition-timing-function: linear;
+}
+
+.nav-bar-d a:nth-child(1):hover {
+  color: #000;
+  transition: color 1s ease-in-out;
 }
 
 .nav-items {
@@ -670,14 +700,6 @@ about-desc {
   font-size: 1.2em;
   flex-basis: 25%;
   color: #000;
-}
-
-.nav-items a:hover {
-  color: #fff;
-  background-color: #ffc107;
-  border-radius: 12px;
-  padding: 10px;
-  transition: backgroungd-color 2s ease;
 }
 
 .nav-items a:nth-child(1) {
@@ -846,6 +868,11 @@ about-desc {
   width: 50vw;
 }
 
+.about-desc {
+  font-size: 1.2em;
+  color: #fff;
+}
+
 .skill-setd {
   display: flex;
   flex-direction: column;
@@ -861,6 +888,10 @@ about-desc {
 
 .skills {
   gap: 0.5vw;
+}
+
+.skills span {
+  font-size: 0.8em;
 }
 
 .contactd {
