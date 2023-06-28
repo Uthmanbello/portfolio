@@ -258,6 +258,14 @@ button:active {
   margin-top: 1px;
 }
 
+.github-icon {
+  width: 52px;
+}
+
+.twitter-icon {
+  width: 52px;
+}
+
 .icon-circle-nav {
   background-color: #000;
 }
@@ -982,7 +990,7 @@ about-desc {
 }
 
 .social-media-footer {
-  gap: 3px;
+  gap: 20px;
   padding-bottom: 0;
 }
 
