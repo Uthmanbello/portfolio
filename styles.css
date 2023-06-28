@@ -16,6 +16,10 @@ button:active {
   border: red;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .dark-grey {
   color: #333333;
 }
@@ -552,12 +556,16 @@ about-desc {
   width: 40px;
 }
 
+.popup-close:hover {
+  width: 40px;
+  cursor: pointer;
+}
+
 .popup-btns {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  margin-top: 2vh;
   background-color: #ffc107f1;
   padding: 10px;
   border-radius: 16px;
@@ -953,5 +961,11 @@ about-desc {
   background-color: #000;
   border-radius: 50%;
   margin-top: 2px;
+}
+
+/* POPUP */
+.popup-btns {
+  width: 20vw;
+  margin-left: 75vw;
 }
 }

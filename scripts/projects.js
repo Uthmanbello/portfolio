@@ -62,7 +62,7 @@ const projectArr = [
   },
   {
       id: 6,
-      title: "Space Travellers' Hub",
+      title: "Space Travelers' Hub",
       image: 'images/Screenshot Space Traveller portfolio.png',
       desktopImage: 'images/Screenshot Space Traveller portfolio.png',
       description: "Space Travellers' Hub is a project which works with live data from the SpaceX API. The app allows users to book rockets and join selected space missions.",
