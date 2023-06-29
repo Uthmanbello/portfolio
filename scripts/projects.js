@@ -68,7 +68,17 @@ const projectArr = [
       technologies: ['html', 'react/redux', 'javascript'],
       live: 'https://space-travellers-hub-ns1r.onrender.com/',
       source: 'https://github.com/Uthmanbello/react_group_project'
-  }
+  },
+  {
+    id: 7,
+    title: "Budget App",
+    mobileImage: 'images/budget-mob.png',
+    desktopImage: 'images/budget-desk.png',
+    description: "Budget App is a project created using Ruby on Rails for users to create bills. It can also allow users to create items under these bills with their corresponding amounts. It can be used to track the spending of an individual.",
+    technologies: ['html', 'css', 'rails'],
+    live: 'https://space-travellers-hub-ns1r.onrender.com/',
+    source: 'https://github.com/Uthmanbello/budget_app'
+}
 ]
 
 const cards = document.querySelector('.cards');
