@@ -545,20 +545,20 @@ about-desc {
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
   z-index: 1001;
+  padding: 2vh;
 }
 
 .popup-content {
-  background-color: white;
-  width: 95%;
-  height: 90vh;
-  box-sizing: border-box;
   border-radius: 16px;
-  display: flex;
+  box-sizing: border-box;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .popup-header {
@@ -1009,6 +1009,17 @@ about-desc {
 /* POPUP */
 .popup-btns {
   width: 20vw;
-  margin-left: 75vw;
+  margin-left: 70vw;
+}
+
+.popup-content {
+  box-sizing: border-box;
+  width: 90vw;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
 }
 }

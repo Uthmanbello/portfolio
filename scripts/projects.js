@@ -2,9 +2,8 @@ const projectArr = [
   {
       id: 0,
       title: 'De Royale Institute',
-      image: 'images/Screenshot sec 1 desk(e).png',
-      pop_mob_image: ['images/DeRoyale1.png', 'images/DeRoyale2.png', 'images/DeRoyale3.png'], 
-      desktopImage: 'images/Screenshot sec 1 desk(e).png',
+      mobileImage: 'images/deroyale-mob.png',
+      desktopImage: 'images/deroyale-desk.png',
       description: 'A web/mobile app for a tech institute which offers different couses annually',
       technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/Capstone1/',
@@ -13,8 +12,8 @@ const projectArr = [
   {
       id: 1,
       title: 'The 100 Series',
-      image: 'images/Screenshot 100 series app portfolio(1).png',
-      desktopImage: 'images/Screenshot 100 series app portfolio(1).png',
+      mobileImage: 'images/100-mob.png',
+      desktopImage: 'images/100-desk.png',
       description: "A single page application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
       technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/capstone2/dist',
@@ -23,8 +22,8 @@ const projectArr = [
   {
       id: 2,
       title: 'Bookstore',
-      image: 'images/Screenshot bookstore portfolio(1).png',
-      desktopImage: 'images/Screenshot bookstore portfolio(1).png',
+      mobileImage: 'images/bookstore-mob.png',
+      desktopImage: 'images/bookstore-desk.png',
       description: 'Bookstore is a project that uses a Single Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://bookstore-17ah.onrender.com/',
@@ -33,8 +32,8 @@ const projectArr = [
   {
       id: 3,
       title: 'Weather App',
-      image: 'images/Screenshot weather app portfolio(2).png',
-      desktopImage: 'images/Screenshot weather app portfolio(2).png',
+      mobileImage: 'images/weather-mob.png',
+      desktopImage: 'images/weather-desk.png',
       description: 'Weather App is a project that uses a Single Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://weather-app-1unw.onrender.com/',
@@ -43,8 +42,8 @@ const projectArr = [
   {
       id: 4,
       title: 'Math Magicians',
-      image: 'images/Screenshot math magicians portfolio(1).png',
-      desktopImage: 'images/Screenshot math magicians portfolio(1).png',
+      mobileImage: 'images/math-mob.png',
+      desktopImage: 'images/math-desk.png',
       description: 'Math Magician is a project that uses a Single Page Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
       technologies: ['html', 'css', 'javascript'],
       live: 'https://math-magicians-3rc8.onrender.com/',
@@ -81,7 +80,7 @@ projectArr.forEach((project) => {
   html += `
     <div class="card">
       <div class="project-card">
-        <img src="${project.image}" alt="Project Image" class="card-image">        
+        <img src="${project.desktopImage}" alt="Project Image" class="card-image">        
         <h3 class="card-title">${project.title}</h3>
         <p class="card-description">${project.description}</p>
         <div class="tech">
@@ -107,7 +106,15 @@ for (let index = 0; index < projectButtons.length; index++) {
       const popupContent = popup.querySelector('.popup-content');
 
       title.textContent = projectArr[index].title;
-      popupContent.style.backgroundImage = `url('${projectArr[index].image}')`;
+      // popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
+      if (window.innerWidth < 768) {
+        // Mobile view
+        popupContent.style.backgroundImage = `url('${projectArr[index].mobileImage}')`;
+      } else {
+        // Desktop view
+        popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
+      }
+
       liveButton.setAttribute('href', projectArr[index].live);
       sourceButton.setAttribute('href', projectArr[index].source);
 
