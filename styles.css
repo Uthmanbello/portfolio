@@ -18,6 +18,28 @@ button:active {
 
 button:hover {
   cursor: pointer;
+  animation: vibrate 0.3s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .dark-grey {
@@ -381,14 +403,10 @@ button:hover {
   transition: color 0.3s ease;
 }
 
-.about-div {
-  background-image: url('images/me.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .about {
-  background-color: #ffffff56;
+  background-color: #ffc10715;
+  border: #ffc107 dashed 1px;
+  border-radius: 6px;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -399,7 +417,7 @@ button:hover {
 }
 
 .resume-button {
-  background-color: #ffc107af;
+  background-color: #ffc107;
   color: #fff;
   border: none;
   padding: 10px;
@@ -426,6 +444,7 @@ about-desc {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2vw;
+  margin-top: -3vh;
 }
 
 .languages p {
@@ -833,13 +852,36 @@ about-desc {
   justify-content: space-around;
 }
 
-.about-div {
+.about{
   width: 50vw;
 }
 
 .about-desc {
-  font-size: 1.2em;
-  color: #fff;
+  font-size: 1.1em;
+}
+
+.summary {
+  display: flex;
+  gap: 2vw;
+  width: 50vw;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  border: #ffc107 dashed 1px;
+  background-color: #ffc10711;
+  border-radius: 4px;
+  width: 15vw;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  color: #ffc107;
+  font-size: 2.5em;
+  line-height: 0.8em;
+  font-weight: 900;
 }
 
 .skill-setd {
@@ -849,6 +891,7 @@ about-desc {
 
 .languages-list {
   gap: 0.5vw;
+  margin-top: -5vh;
 }
 
 .skills-container {
