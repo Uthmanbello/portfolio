@@ -862,7 +862,7 @@ about-desc {
 
 .summary {
   display: flex;
-  gap: 2vw;
+  justify-content: space-around;
   width: 50vw;
   flex-wrap: wrap;
 }
@@ -887,6 +887,10 @@ about-desc {
 .skill-setd {
   display: flex;
   flex-direction: column;
+}
+
+.margin-top {
+  margin-top: -2px;
 }
 
 .languages-list {

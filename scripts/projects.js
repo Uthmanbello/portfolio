@@ -52,8 +52,8 @@ const projectArr = [
   {
       id: 5,
       title: 'Tutoring App',
-      image: 'images/Screenshot Tutoring app portfolio.png',
-      desktopImage: 'images/Screenshot Tutoring app portfolio.png',
+      mobileImage: 'images/tutory-mob.png',
+      desktopImage: 'images/tutory-desk.png',
       description: 'Tutoring App is a single page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
       technologies: ['ruby', 'rails', 'react'],
       live: 'https://tutoring-front-end.onrender.com/',
@@ -62,8 +62,8 @@ const projectArr = [
   {
       id: 6,
       title: "Space Travelers' Hub",
-      image: 'images/Screenshot Space Traveller portfolio.png',
-      desktopImage: 'images/Screenshot Space Traveller portfolio.png',
+      mobileImage: 'images/space travellers-mob.png',
+      desktopImage: 'images/space travellers-desk.png',
       description: "Space Travellers' Hub is a project which works with live data from the SpaceX API. The app allows users to book rockets and join selected space missions.",
       technologies: ['html', 'react/redux', 'javascript'],
       live: 'https://space-travellers-hub-ns1r.onrender.com/',
