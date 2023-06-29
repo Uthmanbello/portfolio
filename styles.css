@@ -1016,13 +1016,14 @@ about-desc {
 /* POPUP */
 .popup-header {
   margin-left: 70vw;
-  margin-top: 12px;
+  margin-top: 0px;
 }
 
 .popup-btns {
   width: 20vw;
   margin-left: 70vw;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
+  z-index: 5;
 }
 
 .popup-content {
