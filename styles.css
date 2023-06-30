@@ -688,7 +688,7 @@ about-desc {
 }
 
 .nav-items a {
-  font-size: 1.2em;
+  font-size: 1.4em;
   flex-basis: 25%;
   color: #000;
 }
@@ -756,7 +756,7 @@ about-desc {
 }
 
 .text {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .projects {
@@ -803,6 +803,10 @@ about-desc {
 .project-card .tech {
   gap: 1vw;
 } 
+
+.card-button {
+  font-size: 1.4em;
+}
 
 .cards::-webkit-scrollbar {
   display: none;
@@ -865,7 +869,7 @@ about-desc {
 }
 
 .about-desc {
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 .summary {
@@ -915,7 +919,7 @@ about-desc {
 }
 
 .skills span {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .contactd {
@@ -935,8 +939,7 @@ about-desc {
 
 .contact-personald {
   width: 25vw;
-  height: 60vh;
-  margin-top: 10vh;
+  margin-top: 60px;
 }
 
 .personald {
@@ -967,7 +970,7 @@ about-desc {
   padding: 16px 32px;
   background-color: #ffc107;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
@@ -982,7 +985,7 @@ about-desc {
   border-right: none;
   background-color: #ffffffcc;
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 .footer-bar {
