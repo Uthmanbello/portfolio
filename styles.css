@@ -783,7 +783,7 @@ about-desc {
   border-radius: 20px;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  padding-left: 140px;
+  padding-left: 0px;
 }
 
 .card {
@@ -808,22 +808,26 @@ about-desc {
   display: none;
 }
 
+.play-arrow {
+  width: 50px;
+}
+
+.play-arrow-left {
+  width: 50px;
+  rotate: 180deg;
+}
+
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  background-color: #ffc1079d;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 40px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  border: 6px solid #fff;
 }
 
 .left-arrow {
@@ -835,7 +839,8 @@ about-desc {
 }
 
 .arrow:hover {
-  background-color: #ffc928a9;
+  background-color: #ffc92842;
+  cursor: pointer;
 }
 
 .arrow:active {
@@ -843,11 +848,11 @@ about-desc {
 }
 
 .left-arrow.disabled {
-  color: red;
+  display: none;
 }
 
 .right-arrow.disabled {
-  color: red;
+  display: none;
 }
 
 .aboutd {

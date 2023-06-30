@@ -20,7 +20,7 @@ cardsContainer.addEventListener('scroll', () => {
   const scrollPosition = cardsContainer.scrollLeft;
   const maxScroll = cardsContainer.scrollWidth - cardsContainer.clientWidth;
 
-  if (scrollPosition === 0) {
+  if (scrollPosition <= 0) {
     leftArrow.classList.add('disabled');
   } else {
     leftArrow.classList.remove('disabled');
