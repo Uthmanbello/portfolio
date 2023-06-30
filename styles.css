@@ -929,17 +929,17 @@ about-desc {
   justify-content: center;
 }
 
-.contact-introd {
-  width: 70vw;
-}
-
-.contact-descd {
-  width: 94vw;
+.form {
+  flex-basis: 70%;
 }
 
 .contact-personald {
-  width: 25vw;
-  margin-top: 60px;
+  flex-basis: 25%;
+}
+
+.form-contact {
+  display: flex;
+  justify-content: space-around;
 }
 
 .personald {
