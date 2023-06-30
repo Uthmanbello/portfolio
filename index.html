@@ -10,8 +10,8 @@
   <script src="scripts/colorChange.js" defer></script>
   <script src="scripts/projects.js" defer></script>
   <script src="scripts/sections.js" defer></script>
-  <script src="scripts/scroller.js" defer></script>
   <script src="scripts/resume.js" defer></script>
+  <script src="scripts/cardScroller.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +19,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;0,700;1,100&family=Lato:wght@400;700;900&family=Lobster&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="nav-bar">
+  <nav class="nav-bar desk-none">
     <a href="#home" class="logo size2">DeRoy<span class="yellow">@</span>le</a>
     <div class="nav-icon">
       <span></span>
       <span></span>
       <span></span>
+    </div>
+  </nav>
+
+  <nav class="nav-bar-d mob-none">
+    <a href="#home" class="logo size2">DeRoy<span class="yellow">@</span>le</a>
+    <div class="nav-items">
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
+      <a href="#contact">Contact</a>
+      <a href="#projects">Projects</a>
     </div>
   </nav>
 
@@ -38,10 +48,10 @@
 
     <div class="social-media social-media-nav">
       <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
-        <img src="images/twitter-black.svg" alt="twitter" class="socials-icon">
+        <img src="images/twitter-black.svg" alt="twitter" class="twitter-icon">
       </a>
       <a href="https://github.com/Uthmanbello" target="_blank">
-        <img src="images/github-black.svg" alt="github" class="socials-icon">
+        <img src="images/github-black.svg" alt="github" class="github-icon">
       </a>
       <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
         <img src="images/linkedin-black.svg" alt="linkedin" class="socials-icon">
@@ -63,39 +73,75 @@
   </div>
 
   <section id="home" class="home">
-    <div>
-    <p class="size1 yellow center">Hi there, I&apos;m</p>
-    <h1 class="size3 center name">Uthman Igein<br>Bello-Imoukhuede</h1>
+    <div class="desk-none">
+      <p class="size1 yellow center greeting">Hi there, I&apos;m</p>
+      <h1 class="size3 center name">Uthman Igein<br>Bello-Imoukhuede</h1>
     </div>
 
-    <div>
-    <h3 class="center role">Full-Stack <span class="yellow typewriter-text" id="element1"></span></h3>
-    <div class="profile">
-      <div class="social-media">
-        <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
-          <img src="images/twitter(1).svg" alt="twitter" class="socials-icon">
-        </a>
-        <a href="https://github.com/Uthmanbello" target="_blank">
-          <img src="images/github(1).svg" alt="github" class="socials-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
-          <img src="images/linkedin(1).svg" alt="linkedin" class="socials-icon">
-        </a>
-        <a href="https://wellfound.com/u/uthmanbelloimoukhuede" target="_blank">
-          <div class="icon-circle">
-            <img src="images/angellist.svg" alt="angellist" class="socials-icon icon-circle">
-          </div>
-        </a>
-        <a href="https://medium.com/@uthmanbello88" target="_blank">
-          <div class="icon-circle">
-            <img src="images/medium.svg" alt="medium" class="socials-icon icon-circle">
-          </div>
-        </a>
-        <a href="mailto:uthmanbelloimoukhuede@gmail.com" target="_blank">
-            <img src="images/email(1).png" alt="email" class="socials-icon">
-        </a>
+    <div class="desk-none">
+      <h3 class="center role">Full-Stack <span class="yellow typewriter-text" id="element1"></span></h3>
+      <div class="profile">
+        <div class="social-media">
+          <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
+            <img src="images/twitter(1).svg" alt="twitter" class="twitter-icon">
+          </a>
+          <a href="https://github.com/Uthmanbello" target="_blank">
+            <img src="images/github(1).svg" alt="github" class="github-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
+            <img src="images/linkedin(1).svg" alt="linkedin" class="socials-icon">
+          </a>
+          <a href="https://wellfound.com/u/uthmanbelloimoukhuede" target="_blank">
+            <div class="icon-circle">
+              <img src="images/angellist.svg" alt="angellist" class="socials-icon icon-circle">
+            </div>
+          </a>
+          <a href="https://medium.com/@uthmanbello88" target="_blank">
+            <div class="icon-circle">
+              <img src="images/medium.svg" alt="medium" class="socials-icon icon-circle">
+            </div>
+          </a>
+          <a href="mailto:uthmanbelloimoukhuede@gmail.com" target="_blank">
+              <img src="images/email(1).png" alt="email" class="socials-icon">
+          </a>
+        </div>
       </div>
     </div>
+
+    <div class="homed mob-none">
+      <div class="profiled"></div>
+      
+      <div class="home-infod">
+        <p class="size1 yellow center greeting">Hi there, I&apos;m</p>
+        <h1 class="size3 center name">Uthman Igein<br>Bello-Imoukhuede</h1>
+        <h3 class="center role">Full-stack <span class="yellow typewriter-text" id="element2"></span></h3>
+        <div>
+          <div class="social-media">
+            <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
+              <img src="images/twitter(1).svg" alt="twitter" class="twitter-icon">
+            </a>
+            <a href="https://github.com/Uthmanbello" target="_blank">
+              <img src="images/github(1).svg" alt="github" class="github-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
+              <img src="images/linkedin(1).svg" alt="linkedin" class="socials-icon">
+            </a>
+            <a href="https://wellfound.com/u/uthmanbelloimoukhuede" target="_blank">
+              <div class="icon-circle">
+                <img src="images/angellist.svg" alt="angellist" class="socials-icon icon-circle">
+              </div>
+            </a>
+            <a href="https://medium.com/@uthmanbello88" target="_blank">
+              <div class="icon-circle">
+                <img src="images/medium.svg" alt="medium" class="socials-icon icon-circle">
+              </div>
+            </a>
+            <a href="mailto:uthmanbelloimoukhuede@gmail.com" target="_blank">
+                <img src="images/email(1).png" alt="email" class="socials-icon">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -103,48 +149,68 @@
     <h2 class="size2 center color-change toggle-section"><img src="images/play.png" class="play">Projects</h2>
     <div>
       <p class="center text">I can help you build a product, feature, or website. Take a look at some of my work and experience! If you like what you see and have a project that needs coding, don't hesitate to contact me.</p>
-      
-      <div class="cards"></div>
+      <div class="cards-container">
+        <div class="cards"></div>
+        <div class="arrow left-arrow mob-none"><img src="images/play.png" class="play-arrow-left"></div>
+        <div class="arrow right-arrow mob-none"><img src="images/play.png" class="play-arrow"></div>
+      </div>
     </div>
   </section>
 
   <section class="languages" id="about">
-    <h2 class="size2 center color-change toggle-section"><img src="images/play.png" class="play">About Myself</h2>
-    <div>
-      <div class="about-div">
+    <h2 class="size2 center color-change toggle-section"><img src="images/play.png" class="play">About Me</h2>
+    <div class="aboutd">
+      <div>
         <div class="about">
-          <p class="center about-dec">Hello, I'm Uthman, a passionate full-stack developer with a strong focus on creating user-friendly web applications. With a solid foundation in front-end and back-end technologies, I strive to deliver innovative solutions that seamlessly merge functionality and aesthetics.</p>
+          <p class="center about-desc">Hello, I'm Uthman, a passionate Full-stack Developer with a strong focus on creating user-friendly web applications. With a solid foundation in front-end and back-end technologies, I strive to deliver innovative solutions that seamlessly merge functionality and aesthetics.</p>
           <button class="center resume-button" type="button">Get my Resume</button>
         </div>
+        <div class="summary mob-none">
+          <p class="summary-item"><span class="number">5</span> <span>languages</span></p>
+          <p class="summary-item"><span class="number">3</span> <span>frameworks</span></p>
+          <p class="summary-item"><span class="number">10+</span> <span>skills</span></p>
+          <p class="summary-item"><span class="number">1+</span> <span>years of experience</span></p>
+          <p class="summary-item"><span class="number">40+</span> <span>completed projects</span></p>
+          <p class="summary-item"><span class="number">6+</span> <span>tech tools/platforms</span></p>
+          
+        </div>
       </div>
-      <h2 class="center">Languages</h2>
-      <div class="languages-list">
-        <p><img src="images/html.svg" alt="html" class="languages-icon">HTML</p>
-        <p><img src="images/css.svg" alt="css" class="languages-icon">CSS</p>
-        <p><img src="images/javascript.svg" alt="javascript" class="languages-icon">JavaScript</p>
-        <p><img src="images/ruby.svg" alt="ruby" class="languages-icon">Ruby</p>
-        <p><img src="images/python.svg" alt="html" class="languages-icon">Python</p>
-      </div>
+      <div class="skill-setd">
+        <div>
+          <h2 class="center margin-top">Languages</h2>
+          <div class="languages-list">
+            <p><img src="images/html.svg" alt="html" class="languages-icon">HTML5</p>
+            <p><img src="images/css.svg" alt="css" class="languages-icon">CSS3</p>
+            <p><img src="images/javascript.svg" alt="javascript" class="languages-icon">JavaScript</p>
+            <p><img src="images/ruby.svg" alt="ruby" class="languages-icon">Ruby</p>
+            <p><img src="images/python.svg" alt="html" class="languages-icon">Python</p>
+          </div>
+        </div>
 
-      <h2 class="center">Frameworks</h2>
-      <div class="languages-list">
-        <p><img src="images/react.svg" alt="react" class="languages-icon">React</p>
-        <p><img src="images/redux.png" alt="redux" class="languages-icon">Redux</p>
-        <p><img src="images/ruby-on-rails.svg" alt="ruby-on-rails" class="languages-icon">Ruby on Rails</p>
-      </div>
+        <div>
+          <h2 class="center">Frameworks</h2>
+          <div class="languages-list">
+            <p><img src="images/react.svg" alt="react" class="languages-icon">React</p>
+            <p><img src="images/redux.png" alt="redux" class="languages-icon">Redux</p>
+            <p><img src="images/ruby-on-rails.svg" alt="ruby-on-rails" class="languages-icon">Rails</p>
+          </div>
+        </div>
 
-      <h2 class="center">Skills</h2>
-      <div class="skills">
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>PostgreSQL</span>
-        <span>OOP</span>
-        <span>Pair-Programming</span>
-        <span>Data Structures</span>
-        <span>Algorithms</span>
-        <span>Problem Management</span>
-        <span>Dev Tools</span>
-        <span>Engineering</span>
+        <div class="skills-container">
+          <h2 class="center">Skills</h2>
+          <div class="skills">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>PostgreSQL</span>
+            <span>OOP</span>
+            <span>Pair-Programming</span>
+            <span>Data Structures</span>
+            <span>Algorithms</span>
+            <span>Problem Management</span>
+            <span>Dev Tools</span>
+            <span>Engineering</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -152,65 +218,84 @@
   <section class="contact" id="contact">
     <div>
       <h2 class="size2 center">Contact</h2>
-      <div>
-        <p class="center text">
-          If you have an application you are interested in developing, a feature that you need built or a
-          project that needs coding. I&apos;d love to help with it.
-        </p>
-        <form action="https://formspree.io/f/xlevqnng" method="post" class="form" id="form">
-          <label for="name" class="label"><input type="text" class="field" id="name" placeholder="Full name" maxlength="30" name="username" required /></label>
-          <label for="emailid" class="label"><input type="email" class="field" id="emailid" placeholder="example@xyz.com" name="email" required /></label>
-          <label for="message" class="label"><textarea class="field" id="message" placeholder="Write your message here" maxlength="500" cols="10"
-              rows="30" name="message" required></textarea>
-          </label>
-          <button class="center card-button form-button" type="submit">Get in touch</button>
-          <p class="validation-message d-none"></p>
-        </form>
+      <div class="contactd">
+        <div class="contact-introd">
+          <p class="center text contact-descd">
+            If you have an application you are interested in developing, a feature that you need built or a
+            project that needs coding. I&apos;d love to help with it.
+          </p>
+          <form action="https://formspree.io/f/xlevqnng" method="post" class="form" id="form">
+            <label for="name" class="label"><input type="text" class="field" id="name" placeholder="Full name" maxlength="30" name="username" required /></label>
+            <label for="emailid" class="label"><input type="email" class="field" id="emailid" placeholder="example@xyz.com" name="email" required /></label>
+            <label for="message" class="label"><textarea class="field" id="message" placeholder="Write your message here" maxlength="500" cols="10"
+                rows="30" name="message" required></textarea>
+            </label>
+            <button class="center card-button form-button" type="submit">Get in touch</button>
+            <p class="validation-message d-none"></p>
+          </form>
+        </div>
+
+        <div class="mob-none contact-personald">
+          <div class="personald">
+            <p class="bold">You can reach me directly...</p>
+            <p><img src="images/location.png" class="personal-icon"> Kano, Nigeria</p>
+            <p><img src="images/phone.png" class="personal-icon"> +234 70-3631-3352</p>
+            <p><img src="images/whatsapp.png" class="personal-icon"> +234 70-3631-3352</p>
+            <p>I will be pleased to here from you</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <footer class="footer-bar mob-none">
+    <a href="#home" class="logo size1 footer-logo white">DeRoy<span class="yellow">@</span>le</a>
+    <div class="social-media social-media-footer">
+      <a href="https://twitter.com/UthmanDeRoyale" target="_blank">
+        <img src="images/twitter-black.svg" alt="twitter" class="footer-icon">
+      </a>
+      <a href="https://github.com/Uthmanbello" target="_blank">
+        <img src="images/github-black.svg" alt="github" class="footer-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/uthmanbelloimoukhuede/" target="_blank">
+        <img src="images/linkedin-black.svg" alt="linkedin" class="footer-icon">
+      </a>
+      <a href="https://wellfound.com/u/uthmanbelloimoukhuede" target="_blank">
+        <div class="icon-circle-footer">
+          <img src="images/angellist.svg" alt="angellist" class="footer-icon">
+        </div>
+      </a>
+      <a href="https://medium.com/@uthmanbello88" target="_blank">
+        <div class="icon-circle-footer">
+          <img src="images/medium.svg" alt="medium" class="footer-icon">
+        </div>
+      </a>
+      <a href="mailto:uthmanbelloimoukhuede@gmail.com" target="_blank">
+          <img src="images/email-black.png" alt="email" class="footer-icon">
+      </a>
+    </div>
+  </footer>
 
   <section>
     <div class="popup">
       <div class="popup-content">
         <div class="popup-header">
           <h2 class="popup-title"></h2>
-          <img src="images/close.svg" class="popup-close">
+          <img src="images/close1.svg" class="popup-close">
         </div>
         
-        <div class="popup-images-container">
-          <div class="popup-images">
-            <div class="popup-image"></div>
-            <div class="popup-image"></div>
-            <div class="popup-image"></div>
-          </div>
-        </div>
-        
-        <div class="popup-dots">
-          <span class="popup-dot active"></span>
-          <span class="popup-dot"></span>
-          <span class="popup-dot"></span>
-        </div>
-        <div class="popup-info">
-          <p class="popup-desc"></p>
-          <div class="tech lang-popup">
-            <span class="tech1"></span>
-            <span class="tech2"></span>
-            <span class="tech3"></span>
-          </div>
           <div class="popup-btns">
               <a href="" class="see-live" target="_blank">
                 <button type="button" class="popup-btn">
-                  See live &nbsp;<img src="images/live.png" alt="see live" class="popup-icon">
+                  See live &nbsp;<img src="images/live1.png" alt="see live" class="popup-icon">
                 </button>
               </a>
               <a href="" class="see-source" target="_blank">
                 <button type="button" class="popup-btn">
-                  See source&nbsp;<img src="images/git.svg" alt="see source" class="popup-icon">
+                  See source&nbsp;<img src="images/git1.svg" alt="see source" class="popup-icon">
                 </button>
               </a>
           </div>
-        </div>
       </div>
     </div>
   </section>

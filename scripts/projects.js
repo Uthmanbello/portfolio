@@ -2,9 +2,8 @@ const projectArr = [
   {
       id: 0,
       title: 'De Royale Institute',
-      image: 'images/Screenshot sec 1 desk(e).png',
-      pop_mob_image: ['images/DeRoyale1.png', 'images/DeRoyale2.png', 'images/DeRoyale3.png'], 
-      desktopImage: 'images/Screenshot sec 1 desk(e).png',
+      mobileImage: 'images/deroyale-mob.png',
+      desktopImage: 'images/deroyale-desk.png',
       description: 'A web/mobile app for a tech institute which offers different couses annually',
       technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/Capstone1/',
@@ -13,8 +12,8 @@ const projectArr = [
   {
       id: 1,
       title: 'The 100 Series',
-      image: 'images/Screenshot 100 series app portfolio(1).png',
-      desktopImage: 'images/Screenshot 100 series app portfolio(1).png',
+      mobileImage: 'images/100-mob.png',
+      desktopImage: 'images/100-desk.png',
       description: "A single page application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
       technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/capstone2/dist',
@@ -23,8 +22,8 @@ const projectArr = [
   {
       id: 2,
       title: 'Bookstore',
-      image: 'images/Screenshot bookstore portfolio(1).png',
-      desktopImage: 'images/Screenshot bookstore portfolio(1).png',
+      mobileImage: 'images/bookstore-mob.png',
+      desktopImage: 'images/bookstore-desk.png',
       description: 'Bookstore is a project that uses a Single Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://bookstore-17ah.onrender.com/',
@@ -33,8 +32,8 @@ const projectArr = [
   {
       id: 3,
       title: 'Weather App',
-      image: 'images/Screenshot weather app portfolio(2).png',
-      desktopImage: 'images/Screenshot weather app portfolio(2).png',
+      mobileImage: 'images/weather-mob.png',
+      desktopImage: 'images/weather-desk.png',
       description: 'Weather App is a project that uses a Single Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://weather-app-1unw.onrender.com/',
@@ -43,8 +42,8 @@ const projectArr = [
   {
       id: 4,
       title: 'Math Magicians',
-      image: 'images/Screenshot math magicians portfolio(1).png',
-      desktopImage: 'images/Screenshot math magicians portfolio(1).png',
+      mobileImage: 'images/math-mob.png',
+      desktopImage: 'images/math-desk.png',
       description: 'Math Magician is a project that uses a Single Page Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
       technologies: ['html', 'css', 'javascript'],
       live: 'https://math-magicians-3rc8.onrender.com/',
@@ -53,8 +52,8 @@ const projectArr = [
   {
       id: 5,
       title: 'Tutoring App',
-      image: 'images/Screenshot Tutoring app portfolio.png',
-      desktopImage: 'images/Screenshot Tutoring app portfolio.png',
+      mobileImage: 'images/tutory-mob.png',
+      desktopImage: 'images/tutory-desk.png',
       description: 'Tutoring App is a single page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
       technologies: ['ruby', 'rails', 'react'],
       live: 'https://tutoring-front-end.onrender.com/',
@@ -62,14 +61,24 @@ const projectArr = [
   },
   {
       id: 6,
-      title: "Space Travellers' Hub",
-      image: 'images/Screenshot Space Traveller portfolio.png',
-      desktopImage: 'images/Screenshot Space Traveller portfolio.png',
-      description: "Space Travellers' Hub is a project where we worked with real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
+      title: "Space Travelers' Hub",
+      mobileImage: 'images/space travellers-mob.png',
+      desktopImage: 'images/space travellers-desk.png',
+      description: "Space Travellers' Hub is a project which works with live data from the SpaceX API. The app allows users to book rockets and join selected space missions.",
       technologies: ['html', 'react/redux', 'javascript'],
       live: 'https://space-travellers-hub-ns1r.onrender.com/',
       source: 'https://github.com/Uthmanbello/react_group_project'
-  }
+  },
+  {
+    id: 7,
+    title: "Budget App",
+    mobileImage: 'images/budget-mob.png',
+    desktopImage: 'images/budget-desk.png',
+    description: "Budget App is a project created using Ruby on Rails for users to create bills. It can also allow users to create items under these bills with their corresponding amounts. It can be used to track the spending of an individual.",
+    technologies: ['html', 'css', 'rails'],
+    live: 'https://space-travellers-hub-ns1r.onrender.com/',
+    source: 'https://github.com/Uthmanbello/budget_app'
+}
 ]
 
 const cards = document.querySelector('.cards');
@@ -81,7 +90,7 @@ projectArr.forEach((project) => {
   html += `
     <div class="card">
       <div class="project-card">
-        <img src="${project.image}" alt="Project Image" class="card-image">        
+        <img src="${project.desktopImage}" alt="Project Image" class="card-image">        
         <h3 class="card-title">${project.title}</h3>
         <p class="card-description">${project.description}</p>
         <div class="tech">
@@ -102,31 +111,23 @@ const projectButtons = document.querySelectorAll('.card-button');
 for (let index = 0; index < projectButtons.length; index++) {
   projectButtons[index].addEventListener('click', () => {
       const title = popup.querySelector('.popup-title');
-      const tech1 = popup.querySelector('.tech1')
-      const tech2 = popup.querySelector('.tech2')
-      const tech3 = popup.querySelector('.tech3')
-      const projDecscription = popup.querySelector('.popup-desc');
       const liveButton = popup.querySelector('.see-live');
       const sourceButton = popup.querySelector('.see-source');
-      const images = popup.querySelectorAll('.popup-image');
+      const popupContent = popup.querySelector('.popup-content');
 
       title.textContent = projectArr[index].title;
-      tech1.textContent = projectArr[index].technologies[0];
-      tech2.textContent = projectArr[index].technologies[1];
-      tech3.textContent = projectArr[index].technologies[2];
-      projDecscription.textContent = projectArr[index].description;
+      // popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
+      if (window.innerWidth < 768) {
+        // Mobile view
+        popupContent.style.backgroundImage = `url('${projectArr[index].mobileImage}')`;
+      } else {
+        // Desktop view
+        popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
+      }
+
       liveButton.setAttribute('href', projectArr[index].live);
       sourceButton.setAttribute('href', projectArr[index].source);
-      
-      // for (let i = 0; i < images.length; i++) {
-      //   images[i].src = projectArr[index].pop_mob_image[i];
-      // }
 
-      for (let i = 0; i < images.length; i++) {
-        images[i].style.backgroundImage = `url(${projectArr[index].pop_mob_image[i]})`;
-      }
-      
-      
       popup.classList.add('show')
       document.body.style.overflowY = 'hidden';
   }) 
