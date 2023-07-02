@@ -263,6 +263,11 @@ button:hover {
   padding-bottom: 2vh;
 }
 
+.rotate:hover {
+  rotate: 360deg;
+  transition: rotate ease-in-out 1s;
+}
+
 .social-media-nav {
   position: fixed;
   bottom: 0;
@@ -625,7 +630,7 @@ about-desc {
   display: none;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media (min-width: 1024px) {
 .desk-none {
   display: none;
 }
@@ -970,7 +975,7 @@ about-desc {
   padding: 16px 32px;
   background-color: #ffc107;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
@@ -985,7 +990,7 @@ about-desc {
   border-right: none;
   background-color: #ffffffcc;
   margin: 10px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .footer-bar {
