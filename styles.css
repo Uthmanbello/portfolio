@@ -643,7 +643,7 @@ about-desc {
 .nav-bar-d {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: #ffffffd7;
   justify-content: space-between;
   padding: 10px;
   position: fixed;

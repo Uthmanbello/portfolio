@@ -78,6 +78,16 @@ const projectArr = [
     technologies: ['css', 'ruby', 'rails'],
     live: 'https://space-travellers-hub-ns1r.onrender.com/',
     source: 'https://github.com/Uthmanbello/budget_app'
+},
+{
+  id: 8,
+  title: "Recipe App",
+  mobileImage: 'images/recipe-mob.png',
+  desktopImage: 'images/recipe-desk.png',
+  description: "Recipe App is a robust and user-friendly recipe application. Seamlessly create, discover, and share recipes with it. It offers a delightful cooking experience with its intuitive interface and extensive features.",
+  technologies: ['css', 'ruby', 'rails'],
+  live: 'https://mysite-uoec.onrender.com/',
+  source: 'https://github.com/Uthmanbello/Recipe-app'
 }
 ]
 
