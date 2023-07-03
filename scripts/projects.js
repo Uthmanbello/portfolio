@@ -75,9 +75,19 @@ const projectArr = [
     mobileImage: 'images/budget-mob.png',
     desktopImage: 'images/budget-desk.png',
     description: "Budget App is a project created using Ruby on Rails for users to create bills. It can also allow users to create items under these bills with their corresponding amounts. It can be used to track the spending of an individual.",
-    technologies: ['html', 'css', 'rails'],
-    live: 'https://space-travellers-hub-ns1r.onrender.com/',
+    technologies: ['css', 'ruby', 'rails'],
+    live: 'https://budget-2kt4.onrender.com/',
     source: 'https://github.com/Uthmanbello/budget_app'
+},
+{
+  id: 8,
+  title: "Recipe App",
+  mobileImage: 'images/recipe-mob.png',
+  desktopImage: 'images/recipe-desk.png',
+  description: "Recipe App is a robust and user-friendly recipe application. Seamlessly create, discover, and share recipes with it. It offers a delightful cooking experience with its intuitive interface and extensive features.",
+  technologies: ['css', 'ruby', 'rails'],
+  live: 'https://mysite-uoec.onrender.com/',
+  source: 'https://github.com/Uthmanbello/Recipe-app'
 }
 ]
 
@@ -116,12 +126,9 @@ for (let index = 0; index < projectButtons.length; index++) {
       const popupContent = popup.querySelector('.popup-content');
 
       title.textContent = projectArr[index].title;
-      // popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
       if (window.innerWidth < 768) {
-        // Mobile view
         popupContent.style.backgroundImage = `url('${projectArr[index].mobileImage}')`;
       } else {
-        // Desktop view
         popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
       }
 
