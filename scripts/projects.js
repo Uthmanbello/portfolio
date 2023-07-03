@@ -76,7 +76,7 @@ const projectArr = [
     desktopImage: 'images/budget-desk.png',
     description: "Budget App is a project created using Ruby on Rails for users to create bills. It can also allow users to create items under these bills with their corresponding amounts. It can be used to track the spending of an individual.",
     technologies: ['css', 'ruby', 'rails'],
-    live: 'https://space-travellers-hub-ns1r.onrender.com/',
+    live: 'https://budget-2kt4.onrender.com/',
     source: 'https://github.com/Uthmanbello/budget_app'
 },
 {
