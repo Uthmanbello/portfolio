@@ -126,12 +126,9 @@ for (let index = 0; index < projectButtons.length; index++) {
       const popupContent = popup.querySelector('.popup-content');
 
       title.textContent = projectArr[index].title;
-      // popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
       if (window.innerWidth < 768) {
-        // Mobile view
         popupContent.style.backgroundImage = `url('${projectArr[index].mobileImage}')`;
       } else {
-        // Desktop view
         popupContent.style.backgroundImage = `url('${projectArr[index].desktopImage}')`;
       }
 
