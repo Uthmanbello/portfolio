@@ -24,7 +24,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**[Portfolio]** is a project which was used for setting up a personal portfolio
+Welcome to my **portfolio**! This project showcases my skills, projects, and journey as a developer. Explore my work, learn more about me, and get in touch to collaborate on exciting opportunities. Together, let's create something amazing! Built with HTML, CSS, and passion.
 
 ## 🛠 Built With <a name="built-with"></a>
 -HTML5
