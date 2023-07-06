@@ -24,7 +24,7 @@ const projectArr = [
       title: 'Bookstore',
       mobileImage: 'images/bookstore-mob.png',
       desktopImage: 'images/bookstore-desk.png',
-      description: 'Bookstore is a project that uses a Single Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
+      description: 'Bookstore is a project that uses a Single-Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://bookstore-17ah.onrender.com/',
       source: 'https://github.com/Uthmanbello/bookstore'
