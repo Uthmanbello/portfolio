@@ -105,16 +105,13 @@ Feel free to check the [issues page](https://github.com/Uthmanbello/portfolio/is
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a like if you like this project and kindly follow me using my social media handles
+Give a star ⭐️ if you like this project and kindly follow me using my social media handles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank my learning partners, morning and standup team members, mentors and other friends who helped throughout the process
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,17 +123,3 @@ This project is [MIT](https://github.com/Uthmanbello/portfolio/blob/dev/LICENSE)
 
 🔭 Future Feature
 More projects will be added to the work
-
-⭐️ Show your support
-If you like this project, kindly give it a star⭐️
-
-🙏 Acknowledgments
-I would like to thank the whole Microverse team
-
-❓ FAQ
-[What does your project do?]
-
-My portfolio contains major completed projects
-
-📝 License
-This project is MIT licensed.
