@@ -39,7 +39,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps:
 
 ### Prerequisites
 
@@ -120,6 +120,3 @@ I would like to thank my learning partners, morning and standup team members, me
 This project is [MIT](https://github.com/Uthmanbello/portfolio/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-🔭 Future Feature
-More projects will be added to the work
