@@ -105,7 +105,7 @@ Feel free to check the [issues page](https://github.com/Uthmanbello/portfolio/is
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a like if you like this project and kindly follow me using my social media handles
+Give a star ⭐️ if you like this project and kindly follow me using my social media handles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
