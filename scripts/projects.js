@@ -14,7 +14,7 @@ const projectArr = [
       title: 'The 100 Series',
       mobileImage: 'images/100-mob.png',
       desktopImage: 'images/100-desk.png',
-      description: "A single page application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
+      description: "A single-page application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
       technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/capstone2/dist',
       source: 'https://github.com/Uthmanbello/capstone2'
