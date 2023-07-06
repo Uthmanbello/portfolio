@@ -44,7 +44,7 @@ const projectArr = [
       title: 'Math Magicians',
       mobileImage: 'images/math-mob.png',
       desktopImage: 'images/math-desk.png',
-      description: 'Math Magician is a project that uses a SinglePage Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
+      description: 'Math Magician is a project that uses a Single-Page Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
       technologies: ['html', 'css', 'javascript'],
       live: 'https://math-magicians-3rc8.onrender.com/',
       source: 'https://github.com/Uthmanbello/math-magicians'
