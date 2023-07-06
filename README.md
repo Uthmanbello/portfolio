@@ -128,7 +128,6 @@ More projects will be added to the work
 If you like this project, kindly give it a star
 
 🙏 Acknowledgments
-I would like to thank the whole Microverse team
 
 ❓ FAQ
 [What does your project do?]
