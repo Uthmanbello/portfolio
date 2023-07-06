@@ -34,7 +34,7 @@ const projectArr = [
       title: 'Weather App',
       mobileImage: 'images/weather-mob.png',
       desktopImage: 'images/weather-desk.png',
-      description: 'Weather App is a project that uses a Single Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
+      description: 'Weather App is a project that uses a SinglePage Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://weather-app-1unw.onrender.com/',
       source: 'https://github.com/Uthmanbello/metrics-webapp'
