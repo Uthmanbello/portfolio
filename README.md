@@ -116,7 +116,7 @@ I would like to thank my learning partners, morning and standup team members, me
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)
+<p align="right">(<a href="#readme-top">back to top
 
 ## 📝 License <a name="license"></a>
 
