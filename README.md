@@ -128,7 +128,7 @@ This project is [MIT](https://github.com/Uthmanbello/portfolio/blob/dev/LICENSE)
 More projects will be added to the work
 
 ⭐️ Show your support
-If you like this project, kindly give it a star⭐️
+If you like this project, kindly give it a star
 
 🙏 Acknowledgments
 I would like to thank the whole Microverse team
