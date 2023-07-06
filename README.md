@@ -39,7 +39,7 @@ Welcome to my **portfolio**! This project showcases my skills, projects, and jou
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps:
 
 ### Prerequisites
 
@@ -105,7 +105,7 @@ Feel free to check the [issues page](https://github.com/Uthmanbello/portfolio/is
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a like if you like this project and kindly follow me using my social media handles
+Give a star ⭐️ if you like this project and kindly follow me using my social media handles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,28 +115,8 @@ I would like to thank my learning partners, morning and standup team members, me
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/Uthmanbello/portfolio/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-🔭 Future Feature
-More projects will be added to the work
-
-⭐️ Show your support
-If you like this project, kindly give it a star⭐️
-
-🙏 Acknowledgments
-I would like to thank the whole Microverse team
-
-❓ FAQ
-[What does your project do?]
-
-My portfolio contains major completed projects
-
-📝 License
-This project is MIT licensed.

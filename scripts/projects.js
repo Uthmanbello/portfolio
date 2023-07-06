@@ -14,7 +14,7 @@ const projectArr = [
       title: 'The 100 Series',
       mobileImage: 'images/100-mob.png',
       desktopImage: 'images/100-desk.png',
-      description: "A single page application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
+      description: "A Single-Page Application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
       technologies: ['html', 'css', 'javascript'],
       live: 'https://uthmanbello.github.io/capstone2/dist',
       source: 'https://github.com/Uthmanbello/capstone2'
@@ -24,7 +24,7 @@ const projectArr = [
       title: 'Bookstore',
       mobileImage: 'images/bookstore-mob.png',
       desktopImage: 'images/bookstore-desk.png',
-      description: 'Bookstore is a project that uses a Single Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
+      description: 'Bookstore is a project that uses a Single-Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://bookstore-17ah.onrender.com/',
       source: 'https://github.com/Uthmanbello/bookstore'
@@ -34,7 +34,7 @@ const projectArr = [
       title: 'Weather App',
       mobileImage: 'images/weather-mob.png',
       desktopImage: 'images/weather-desk.png',
-      description: 'Weather App is a project that uses a Single Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
+      description: 'Weather App is a project that uses a Single-Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
       technologies: ['html', 'css', 'react/redux'],
       live: 'https://weather-app-1unw.onrender.com/',
       source: 'https://github.com/Uthmanbello/metrics-webapp'
@@ -44,7 +44,7 @@ const projectArr = [
       title: 'Math Magicians',
       mobileImage: 'images/math-mob.png',
       desktopImage: 'images/math-desk.png',
-      description: 'Math Magician is a project that uses a Single Page Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
+      description: 'Math Magician is a project that uses a Single-Page Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
       technologies: ['html', 'css', 'javascript'],
       live: 'https://math-magicians-3rc8.onrender.com/',
       source: 'https://github.com/Uthmanbello/math-magicians'
@@ -54,7 +54,7 @@ const projectArr = [
       title: 'Tutoring App',
       mobileImage: 'images/tutory-mob.png',
       desktopImage: 'images/tutory-desk.png',
-      description: 'Tutoring App is a single page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
+      description: 'Tutoring App is a Single Page Application that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
       technologies: ['ruby', 'rails', 'react'],
       live: 'https://tutoring-front-end.onrender.com/',
       source: 'https://github.com/Uthmanbello/tutoring-app-frontend'
