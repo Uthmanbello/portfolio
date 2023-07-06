@@ -54,7 +54,7 @@ const projectArr = [
       title: 'Tutoring App',
       mobileImage: 'images/tutory-mob.png',
       desktopImage: 'images/tutory-desk.png',
-      description: 'Tutoring App is a Single Page app that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
+      description: 'Tutoring App is a Single Page App that enables users to effortlessly manage classes, including adding, deleting, and viewing class details. It also provides reservation functionality, allowing users to make reservations and view their reservation details.',
       technologies: ['ruby', 'rails', 'react'],
       live: 'https://tutoring-front-end.onrender.com/',
       source: 'https://github.com/Uthmanbello/tutoring-app-frontend'
