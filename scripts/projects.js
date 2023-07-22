@@ -88,6 +88,26 @@ const projectArr = [
   technologies: ['css', 'ruby', 'rails'],
   live: 'https://mysite-uoec.onrender.com/',
   source: 'https://github.com/Uthmanbello/Recipe-app'
+},
+{
+  id: 9,
+  title: "Mountains",
+  mobileImage: 'images/mountains-mob.png',
+  desktopImage: 'images/mountains-desk.png',
+  description: "Mountains is a project which was built as a Single Page App which was created to show captivatiing UI.",
+  technologies: ['html', 'css', 'javascript'],
+  live: 'https://uthmanbello.github.io/mountains/',
+  source: 'https://github.com/Uthmanbello/mountains'
+},
+{
+  id: 10,
+  title: "DeRoyale Foods",
+  mobileImage: 'images/foods-mob.png',
+  desktopImage: 'images/foods-desk.png',
+  description: "DeRoyale Foods is a project built with SASS and Bootstrap which displays different meals and their recipes. It also provides links for users to watch videos on how to prepare their favorite dishes.",
+  technologies: ['html', 'css', 'javascript'],
+  live: 'https://uthmanbello.github.io/deroyale-foods/',
+  source: 'https://github.com/Uthmanbello/deroyale-foods'
 }
 ]
 
