@@ -11,13 +11,13 @@ const projectArr = [
   },
   {
       id: 1,
-      title: 'The 100 Series',
-      mobileImage: 'images/100-mob.png',
-      desktopImage: 'images/100-desk.png',
-      description: "A Single-Page Application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
-      technologies: ['html', 'css', 'javascript'],
-      live: 'https://uthmanbello.github.io/capstone2/dist',
-      source: 'https://github.com/Uthmanbello/capstone2'
+      title: 'DeRoyale Courses App',
+      mobileImage: 'images/courses-mob.png',
+      desktopImage: 'images/courses-desk.png',
+      description: "An app created using Python and Django. It can also allow users to create courses and also manage the topics under every course. Users can use it to keep track of their tech learning process.",
+      technologies: ['html', 'python', 'django'],
+      live: 'https://mysite-cn4k.onrender.com/',
+      source: 'https://github.com/Uthmanbello/courses'
   },
   {
       id: 2,
@@ -108,6 +108,16 @@ const projectArr = [
   technologies: ['html', 'css', 'javascript'],
   live: 'https://uthmanbello.github.io/deroyale-foods/',
   source: 'https://github.com/Uthmanbello/deroyale-foods'
+},
+{
+  id: 11,
+  title: 'The 100 Series',
+  mobileImage: 'images/100-mob.png',
+  desktopImage: 'images/100-desk.png',
+  description: "A Single-Page Application built with JavaScript which interacts with two APIs. It is an app wherein users can 'like' respective seasons of 'The 100' series, add comments and reservations too.",
+  technologies: ['html', 'css', 'javascript'],
+  live: 'https://uthmanbello.github.io/capstone2/dist',
+  source: 'https://github.com/Uthmanbello/capstone2'
 }
 ]
 
