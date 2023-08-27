@@ -111,7 +111,7 @@ Give a star ⭐️ if you like this project and kindly follow me using my social
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my learning partners, morning and standup team members, mentors and other friends who helped throughout the process
+I would like to thank my learning partners, morning and standup team members, mentors and other friends who helped throughout the process.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
