@@ -118,6 +118,16 @@ const projectArr = [
   technologies: ['html', 'css', 'javascript'],
   live: 'https://uthmanbello.github.io/capstone2/dist',
   source: 'https://github.com/Uthmanbello/capstone2'
+},
+{
+  id: 12,
+  title: 'DeRoyale Lodge',
+  mobileImage: 'images/lodge-mob.png',
+  desktopImage: 'images/lodge-desk.png',
+  description: "An app that uses AI to interview a potential customer for a hotel. It is built using React.",
+  technologies: ['react', 'css', 'javascript'],
+  live: 'https://deroyale-lodge.onrender.com',
+  source: 'https://github.com/Uthmanbello/deroyale-companion'
 }
 ]
 
