@@ -648,6 +648,7 @@ button:hover {
     align-items: center;
     background-color: #ffffffd7;
     justify-content: space-between;
+
     /* padding: 10px; */
     position: fixed;
     top: 0;
@@ -1006,6 +1007,7 @@ button:hover {
   .footer-logo {
     background-color: #000;
     width: 15vw;
+
     /* padding: 6px 0; */
     display: flex;
     justify-content: center;
