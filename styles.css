@@ -1113,6 +1113,7 @@ button:hover {
   .social-media-footer {
     gap: 20px;
     padding-bottom: 0;
+    margin-right: 20px;
   }
 
   .icon-circle-footer {
