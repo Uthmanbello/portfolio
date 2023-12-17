@@ -119,6 +119,28 @@ button:hover {
   text-transform: uppercase;
 }
 
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #121a22d6; */
+  background-color: #ffffffda;
+  z-index: -999;
+}
+
 .align-center {
   display: flex;
   align-items: center;
@@ -334,7 +356,7 @@ button:hover {
 }
 
 .social-media {
-  background-color: #ffffffc7;
+  /* background-color: #ffffffc7; */
   display: flex;
   align-items: center;
   gap: 4vw;
@@ -801,8 +823,10 @@ button:hover {
     display: flex;
     background-color: #ffc10736;
     background-image:
-      linear-gradient(to bottom, white 50%, transparent 50%),
-      radial-gradient(circle at top left, white 50%, transparent 50%);
+      /* linear-gradient(to bottom, white 50%, transparent 50%),
+      radial-gradient(circle at top left, white 50%, transparent 50%); */
+      linear-gradient(to bottom, transparent 50%, transparent 50%),
+      radial-gradient(circle at top left, transparent 50%, transparent 50%);
     background-size: 0% 50%, 100% 100%;
     background-position: top, bottom;
     background-repeat: no-repeat;
