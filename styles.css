@@ -394,6 +394,10 @@ button:hover {
   line-height: 1.1rem;
 }
 
+.contact-me {
+  font-weight: bold;
+}
+
 .cards {
   background-color: #ffc10791;
   padding: 16px;
