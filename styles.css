@@ -760,7 +760,7 @@ button:hover {
   }
 
   .nav-items a {
-    font-size: 1.4em;
+    font-size: 1rem;
     flex-basis: 25%;
     color: #000;
   }
@@ -813,7 +813,7 @@ button:hover {
 
   .greeting {
     margin-top: 16vh;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-align: left;
   }
 
@@ -829,14 +829,16 @@ button:hover {
   }
 
   .social-media {
-    gap: 0.4vw;
+    /* gap: 0.4vw; */
+    gap: 1vw;
     background-color: transparent;
   }
 
   .icon-circle {
-    width: 40px;
-    height: 40px;
-    margin-top: 2px;
+    width: 32px;
+    height: 32px;
+    /* margin-top: 2px; */
+    margin: 0px 4px;
   }
 
   .text {
