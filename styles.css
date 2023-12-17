@@ -86,6 +86,18 @@ button:hover {
   color: #fff;
 }
 
+.size4 {
+  font-size: 0.7rem;
+}
+
+.size5 {
+  font-size: 0.9rem;
+}
+
+.size6 {
+  font-size: 1.2rem;
+}
+
 .size1 {
   font-size: 1.5em;
 }
@@ -266,13 +278,17 @@ button:hover {
 }
 
 .menu-content a {
-  font-size: 2em;
+  /* font-size: 2em; */
+  font-size: 1.3rem;
   color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .menu-content a img {
-  width: 30px;
+  width: 20px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 #menu-overlay.active #menu-content {
@@ -287,8 +303,13 @@ button:hover {
   padding-top: 5vh;
 }
 
+.greeting {
+  margin-top: 6vh;
+}
+
 .name {
   line-height: 6vh;
+  font-size: 2rem;
 }
 
 .role {
