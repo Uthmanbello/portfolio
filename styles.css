@@ -411,10 +411,6 @@ button:hover {
   width: 44px;
 }
 
-.twitter-icon {
-  width: 40px;
-}
-
 .icon-circle-nav {
   background-color: #000;
 }
@@ -1138,6 +1134,10 @@ button:hover {
     width: 25px;
   }
 
+  .x-footer-icon {
+    width: 18px;
+  }
+
   .social-media-footer {
     gap: 20px;
     padding-bottom: 0;
@@ -1150,6 +1150,9 @@ button:hover {
     background-color: #000;
     border-radius: 50%;
     margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* POPUP */
