@@ -22,6 +22,15 @@ button:hover {
   animation: vibrate 0.3s infinite;
 }
 
+.deroyale-at { 
+  display: inline-block; 
+  animation: rotateLetter 2s infinite;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 @keyframes vibrate {
   0% {
     transform: translateX(0);
@@ -45,6 +54,15 @@ button:hover {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes rotateLetter {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
   }
 }
 
