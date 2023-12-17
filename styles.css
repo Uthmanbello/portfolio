@@ -305,6 +305,7 @@ button:hover {
 
 .greeting {
   margin-top: 6vh;
+  font-size: 1.2rem;
 }
 
 .name {
@@ -330,6 +331,7 @@ button:hover {
 .social-media {
   background-color: #ffffffc7;
   display: flex;
+  align-items: center;
   gap: 4vw;
   padding-bottom: 2vh;
 }
@@ -347,14 +349,17 @@ button:hover {
 }
 
 .socials-icon {
-  width: 46px;
+  /* width: 46px; */
+  width: 40px;
 }
 
 .icon-circle {
   background-color: #ffc107;
   border-radius: 50%;
-  height: 42px;
-  width: 42px;
+  /* height: 42px;
+  width: 42px; */
+  height: 38px;
+  width: 38px;
   display: flex;
   justify-content: center;
   margin-top: 1px;
@@ -365,7 +370,7 @@ button:hover {
 }
 
 .twitter-icon {
-  width: 52px;
+  width: 46px;
 }
 
 .icon-circle-nav {
@@ -385,7 +390,8 @@ button:hover {
 }
 
 .text {
-  font-size: 1em;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 .cards {
@@ -424,13 +430,13 @@ button:hover {
 
 .card-title {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1rem;
   margin-top: 10px;
 }
 
 .card-description {
   margin-top: 8px;
-  font-size: 1em;
+  font-size: 0.8rem;
 }
 
 .card-button {
@@ -462,6 +468,7 @@ button:hover {
   align-items: center;
   gap: 5vw;
   height: 30px;
+  font-size: 0.7rem;
 }
 
 .color-change {
@@ -487,7 +494,7 @@ button:hover {
   border: none;
   padding: 10px;
   border-radius: 6px;
-  font-size: 1.1em;
+  font-size: 0.8rem;
 }
 
 .languages {
@@ -497,6 +504,10 @@ button:hover {
 
 .languages h2 {
   margin-left: 10px;
+}
+
+.sub-heading {
+  font-size: 1.1rem;
 }
 
 .languages-list {
@@ -512,6 +523,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  font-size: 0.8rem;
 }
 
 .languages-icon {
@@ -552,7 +564,12 @@ button:hover {
   border-right: none;
   background-color: #fffc;
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 0.9rem;
+}
+
+.field::placeholder {
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
 .field:focus {
