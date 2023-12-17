@@ -191,7 +191,7 @@ button:hover {
 .nav-icon span {
   width: 25px;
   border: 2px solid #ffc107;
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
 }
 
 .nav-icon.active {
@@ -255,7 +255,7 @@ button:hover {
   background-color: #ffffffd7;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  margin-top: -2px;
+  /* margin-top: -2px; */
   z-index: 999;
 }
 
@@ -349,8 +349,13 @@ button:hover {
 .social-media-nav {
   position: fixed;
   bottom: 0;
-  padding-left: 8px;
+  padding-left: 38px;
   background-color: transparent;
+}
+
+.social-media-nav a {
+  display: flex;
+  align-items: center;
 }
 
 .socials-icon {
