@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -19,6 +21,15 @@ button:active {
 button:hover {
   cursor: pointer;
   animation: vibrate 0.3s infinite;
+}
+
+.deroyale-at {
+  display: inline-block;
+  animation: rotateLetter 2s infinite;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @keyframes vibrate {
@@ -47,6 +58,16 @@ button:hover {
   }
 }
 
+@keyframes rotateLetter {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 .dark-grey {
   color: #333;
 }
@@ -65,6 +86,18 @@ button:hover {
 
 .white {
   color: #fff;
+}
+
+.size4 {
+  font-size: 0.7rem;
+}
+
+.size5 {
+  font-size: 0.9rem;
+}
+
+.size6 {
+  font-size: 1.2rem;
 }
 
 .size1 {
@@ -86,6 +119,34 @@ button:hover {
 
 .caps {
   text-transform: uppercase;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* background-color: #121a22d6; */
+  background-color: #ffffffda;
+  z-index: -999;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
 }
 
 .toggle-section + * {
@@ -160,7 +221,7 @@ button:hover {
 .nav-icon span {
   width: 25px;
   border: 2px solid #ffc107;
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
 }
 
 .nav-icon.active {
@@ -224,7 +285,8 @@ button:hover {
   background-color: #ffffffd7;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  margin-top: -2px;
+
+  /* margin-top: -2px; */
   z-index: 999;
 }
 
@@ -247,13 +309,17 @@ button:hover {
 }
 
 .menu-content a {
-  font-size: 2em;
+  /* font-size: 2em; */
+  font-size: 1.3rem;
   color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .menu-content a img {
-  width: 30px;
+  width: 20px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 #menu-overlay.active #menu-content {
@@ -268,8 +334,14 @@ button:hover {
   padding-top: 5vh;
 }
 
+.greeting {
+  margin-top: 6vh;
+  font-size: 1.2rem;
+}
+
 .name {
   line-height: 6vh;
+  font-size: 2rem;
 }
 
 .role {
@@ -288,10 +360,16 @@ button:hover {
 }
 
 .social-media {
-  background-color: #ffffffc7;
+  /* background-color: #ffffffc7; */
   display: flex;
+  align-items: center;
   gap: 4vw;
   padding-bottom: 2vh;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
 }
 
 .rotate:hover {
@@ -302,30 +380,39 @@ button:hover {
 .social-media-nav {
   position: fixed;
   bottom: 0;
-  padding-left: 8px;
+  padding-left: 38px;
   background-color: transparent;
 }
 
+.social-media-nav a {
+  display: flex;
+  align-items: center;
+}
+
 .socials-icon {
-  width: 46px;
+  /* width: 46px; */
+  width: 35px;
 }
 
 .icon-circle {
   background-color: #ffc107;
   border-radius: 50%;
-  height: 42px;
-  width: 42px;
+
+  /* height: 42px;
+  width: 42px; */
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   margin-top: 1px;
 }
 
 .github-icon {
-  width: 52px;
+  width: 44px;
 }
 
 .twitter-icon {
-  width: 52px;
+  width: 40px;
 }
 
 .icon-circle-nav {
@@ -345,7 +432,12 @@ button:hover {
 }
 
 .text {
-  font-size: 1em;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.contact-me {
+  font-weight: bold;
 }
 
 .cards {
@@ -384,13 +476,13 @@ button:hover {
 
 .card-title {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1rem;
   margin-top: 10px;
 }
 
 .card-description {
   margin-top: 8px;
-  font-size: 1em;
+  font-size: 0.8rem;
 }
 
 .card-button {
@@ -422,6 +514,7 @@ button:hover {
   align-items: center;
   gap: 5vw;
   height: 30px;
+  font-size: 0.7rem;
 }
 
 .color-change {
@@ -447,7 +540,7 @@ button:hover {
   border: none;
   padding: 10px;
   border-radius: 6px;
-  font-size: 1.1em;
+  font-size: 0.8rem;
 }
 
 .languages {
@@ -457,6 +550,10 @@ button:hover {
 
 .languages h2 {
   margin-left: 10px;
+}
+
+.sub-heading {
+  font-size: 1.1rem;
 }
 
 .languages-list {
@@ -472,6 +569,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  font-size: 0.8rem;
 }
 
 .languages-icon {
@@ -512,7 +610,12 @@ button:hover {
   border-right: none;
   background-color: #fffc;
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 0.9rem;
+}
+
+.field::placeholder {
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
 .field:focus {
@@ -648,8 +751,7 @@ button:hover {
     align-items: center;
     background-color: #ffffffd7;
     justify-content: space-between;
-
-    /* padding: 10px; */
+    padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -659,9 +761,9 @@ button:hover {
     z-index: 1000;
   }
 
-  .nav-logo {
+  /* .nav-logo {
     width: 9vw;
-  }
+  } */
 
   .nav-bar-d a {
     position: relative;
@@ -689,7 +791,7 @@ button:hover {
   }
 
   .nav-items a {
-    font-size: 1.4em;
+    font-size: 1rem;
     flex-basis: 25%;
     color: #000;
   }
@@ -725,8 +827,10 @@ button:hover {
     display: flex;
     background-color: #ffc10736;
     background-image:
-      linear-gradient(to bottom, white 50%, transparent 50%),
-      radial-gradient(circle at top left, white 50%, transparent 50%);
+      /* linear-gradient(to bottom, white 50%, transparent 50%),
+      radial-gradient(circle at top left, white 50%, transparent 50%); */
+      linear-gradient(to bottom, transparent 50%, transparent 50%),
+      radial-gradient(circle at top left, transparent 50%, transparent 50%);
     background-size: 0% 50%, 100% 100%;
     background-position: top, bottom;
     background-repeat: no-repeat;
@@ -742,7 +846,7 @@ button:hover {
 
   .greeting {
     margin-top: 16vh;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-align: left;
   }
 
@@ -758,18 +862,19 @@ button:hover {
   }
 
   .social-media {
-    gap: 0.4vw;
+    gap: 1vw;
     background-color: transparent;
   }
 
   .icon-circle {
-    width: 40px;
-    height: 40px;
-    margin-top: 2px;
+    width: 32px;
+    height: 32px;
+    margin: 0 4px;
   }
 
   .text {
-    font-size: 1.4em;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .projects {
@@ -813,12 +918,16 @@ button:hover {
     height: 73vh;
   }
 
+  .card-description {
+    font-size: 0.7rem;
+  }
+
   .project-card .tech {
     gap: 1vw;
   }
 
   .card-button {
-    font-size: 1.4em;
+    font-size: 1rem;
   }
 
   .cards::-webkit-scrollbar {
@@ -879,6 +988,7 @@ button:hover {
 
   .about {
     width: 50vw;
+    padding: 4vh;
   }
 
   .about-desc {
@@ -897,7 +1007,7 @@ button:hover {
     background-color: #ffc10711;
     border-radius: 4px;
     width: 15vw;
-    padding: 2vh;
+    padding: 4vh;
     display: flex;
     flex-direction: column;
   }
@@ -907,6 +1017,10 @@ button:hover {
     font-size: 2.5em;
     line-height: 0.8em;
     font-weight: 900;
+  }
+
+  .sub-heading {
+    margin-bottom: 10px;
   }
 
   .skill-setd {
@@ -920,7 +1034,6 @@ button:hover {
 
   .languages-list {
     gap: 0.5vw;
-    margin-top: -5vh;
   }
 
   .skills-container {
@@ -932,7 +1045,7 @@ button:hover {
   }
 
   .skills span {
-    font-size: 1em;
+    font-size: 0.8rem;
   }
 
   .contactd {
@@ -954,6 +1067,7 @@ button:hover {
   .form-contact {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 
   .personald {
@@ -963,7 +1077,9 @@ button:hover {
     justify-content: start;
     align-items: start;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    padding-left: 10px;
+
+    /* padding-left: 10px; */
+    padding: 16px 10px;
   }
 
   .personal-icon {
@@ -980,7 +1096,7 @@ button:hover {
     padding: 16px 32px;
     background-color: #ffc107;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1rem;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -1007,8 +1123,7 @@ button:hover {
   .footer-logo {
     background-color: #000;
     width: 15vw;
-
-    /* padding: 6px 0; */
+    padding: 6px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1026,6 +1141,7 @@ button:hover {
   .social-media-footer {
     gap: 20px;
     padding-bottom: 0;
+    margin-right: 20px;
   }
 
   .icon-circle-footer {
