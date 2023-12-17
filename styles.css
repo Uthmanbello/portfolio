@@ -119,6 +119,11 @@ button:hover {
   text-transform: uppercase;
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
 .toggle-section + * {
   max-height: 0;
   overflow: hidden;
@@ -829,7 +834,6 @@ button:hover {
   }
 
   .social-media {
-    /* gap: 0.4vw; */
     gap: 1vw;
     background-color: transparent;
   }
@@ -837,12 +841,12 @@ button:hover {
   .icon-circle {
     width: 32px;
     height: 32px;
-    /* margin-top: 2px; */
     margin: 0px 4px;
   }
 
   .text {
-    font-size: 1.4em;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .projects {
@@ -886,12 +890,16 @@ button:hover {
     height: 73vh;
   }
 
+  .card-description {
+    font-size: 0.7rem;
+  }
+
   .project-card .tech {
     gap: 1vw;
   }
 
   .card-button {
-    font-size: 1.4em;
+    font-size: 1rem;
   }
 
   .cards::-webkit-scrollbar {
@@ -952,6 +960,7 @@ button:hover {
 
   .about {
     width: 50vw;
+    padding: 4vh;
   }
 
   .about-desc {
@@ -970,7 +979,7 @@ button:hover {
     background-color: #ffc10711;
     border-radius: 4px;
     width: 15vw;
-    padding: 2vh;
+    padding: 4vh;
     display: flex;
     flex-direction: column;
   }
@@ -980,6 +989,10 @@ button:hover {
     font-size: 2.5em;
     line-height: 0.8em;
     font-weight: 900;
+  }
+
+  .sub-heading {
+    margin-bottom: 10px;
   }
 
   .skill-setd {
@@ -993,7 +1006,6 @@ button:hover {
 
   .languages-list {
     gap: 0.5vw;
-    margin-top: -5vh;
   }
 
   .skills-container {
@@ -1005,7 +1017,7 @@ button:hover {
   }
 
   .skills span {
-    font-size: 1em;
+    font-size: 0.8rem;
   }
 
   .contactd {
@@ -1027,6 +1039,7 @@ button:hover {
   .form-contact {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 
   .personald {
@@ -1053,7 +1066,7 @@ button:hover {
     padding: 16px 32px;
     background-color: #ffc107;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1rem;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
