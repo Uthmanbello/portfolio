@@ -649,7 +649,7 @@ button:hover {
     background-color: #ffffffd7;
     justify-content: space-between;
 
-    /* padding: 10px; */
+    padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -659,9 +659,9 @@ button:hover {
     z-index: 1000;
   }
 
-  .nav-logo {
+  /* .nav-logo {
     width: 9vw;
-  }
+  } */
 
   .nav-bar-d a {
     position: relative;
@@ -1008,7 +1008,7 @@ button:hover {
     background-color: #000;
     width: 15vw;
 
-    /* padding: 6px 0; */
+    padding: 6px 0;
     display: flex;
     justify-content: center;
     align-items: center;
