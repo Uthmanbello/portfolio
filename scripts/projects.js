@@ -92,11 +92,11 @@ const projectArr = [
 {
   id: 9,
   title: "My Review Partner",
-  mobileImage: 'images/review-mob.png',
-  desktopImage: 'images/review-desk.png',
+  mobileImage: 'images/review-mob1.png',
+  desktopImage: 'images/review-desk1.png',
   description: "My Review Partner is a responsive AI powered project which was built using React. It fetches reviews from popular social media and gives responses to the reviews automatically. The user can also edit the responses as they deem fit. The app also provides the user with the flexibility of navigating through reviews and the generated responses.",
   technologies: ['css', 'javascript', 'react'],
-  live: 'https://hotel-review-manager.vercel.app/',
+  live: 'https://manager-review-platform.vercel.app/',
   source: 'https://github.com/Uthmanbello/review-platform-front'
 },
 {
