@@ -26,7 +26,7 @@ const projectArr = [
       desktopImage: 'images/bookstore-desk.png',
       description: 'Bookstore is a project that uses a Single-Page Application format to display items on a page. A user can switch to two pages wherein one displays the titles and authors of books, and also a form to add a new book.',
       technologies: ['html', 'css', 'react/redux'],
-      live: 'https://bookstore-17ah.onrender.com/',
+      live: 'https://bookstore-gold-alpha.vercel.app/',
       source: 'https://github.com/Uthmanbello/bookstore'
   },
   {
@@ -36,7 +36,7 @@ const projectArr = [
       desktopImage: 'images/weather-desk.png',
       description: 'Weather App is a project that uses a Single-Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category.',
       technologies: ['html', 'css', 'react/redux'],
-      live: 'https://weather-app-1unw.onrender.com/',
+      live: 'https://weather-update-app.vercel.app/',
       source: 'https://github.com/Uthmanbello/metrics-webapp'
   },
   {
@@ -46,7 +46,7 @@ const projectArr = [
       desktopImage: 'images/math-desk.png',
       description: 'Math Magician is a project that uses a Single-Page Application format to display items on a page. A user can switch to a page where a live calculator which can be used for computation is.',
       technologies: ['html', 'css', 'javascript'],
-      live: 'https://math-magicians-3rc8.onrender.com/',
+      live: 'https://math-magicians-chi.vercel.app/',
       source: 'https://github.com/Uthmanbello/math-magicians'
   },
   {
@@ -66,7 +66,7 @@ const projectArr = [
       desktopImage: 'images/space travellers-desk.png',
       description: "Space Travellers' Hub is a project which works with live data from the SpaceX API. The app allows users to book rockets and join selected space missions.",
       technologies: ['html', 'react/redux', 'javascript'],
-      live: 'https://space-travellers-hub-ns1r.onrender.com/',
+      live: 'https://space-travellers-hub-two.vercel.app/',
       source: 'https://github.com/Uthmanbello/react_group_project'
   },
   {
@@ -126,7 +126,7 @@ const projectArr = [
   desktopImage: 'images/lodge-desk.PNG',
   description: "An app that uses AI to interview a potential customer for a hotel. It is built using React.",
   technologies: ['react', 'css', 'javascript'],
-  live: 'https://deroyale-lodge.onrender.com',
+  live: 'https://deroyale-lodge.vercel.app/',
   source: 'https://github.com/Uthmanbello/deroyale-companion'
 }
 ]
