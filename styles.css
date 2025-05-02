@@ -650,10 +650,17 @@ button:hover {
   border-radius: 16px;
   padding: 0 5px;
   margin-top: -12px;
+  cursor: pointer;
+  transition: font-size ease-in-out 0.5s;
+}
+
+.popup-header:hover {
+  font-size: 0.81em;
 }
 
 .popup-close {
   width: 30px;
+  transition: width ease-in-out 0.5s;
 }
 
 .popup-close:hover {
@@ -669,7 +676,7 @@ button:hover {
   background-color: #ffc107f1;
   padding: 5px;
   border-radius: 6px;
-  margin-bottom: -12px;
+  margin-bottom: 40px;
 }
 
 .popup-btn {
