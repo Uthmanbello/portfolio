@@ -210,7 +210,7 @@ for (let index = 0; index < projectButtons.length; index++) {
   }) 
 }
 
-const btnClosePopup = document.querySelector('.popup-close');
+const btnClosePopup = document.querySelector('.popup-close, .popup-header');
 btnClosePopup.addEventListener('click', () => {
     popup.classList.remove('show');
     document.body.style.overflowY = 'auto';
