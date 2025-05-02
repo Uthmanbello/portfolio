@@ -12,8 +12,8 @@ const projectArr = [
   {
       id: 1,
       title: 'SubExpress App',
-      mobileImage: 'images/subexpress-mob.png',
-      desktopImage: 'images/subexpress-desk.png',
+      mobileImage: 'images/subexpress-mob.PNG',
+      desktopImage: 'images/subexpress-desk.PNG',
       description: "A mobile app that allows users to subscribe to internet data bundles, pay for electricity and cable TV, and even purchase call recharge cards. (For the best layout and user experience, view on a mobile device.)",
       technologies: ['javascript', 'react', 'firebase'],
       live: 'https://subexpress.vercel.app/',
@@ -22,8 +22,8 @@ const projectArr = [
   {
     id: 2,
     title: 'ElevateHER Portal',
-    mobileImage: 'images/elevateher-mob.png',
-    desktopImage: 'images/elevateher-desk.png',
+    mobileImage: 'images/elevateher-mob.PNG',
+    desktopImage: 'images/elevateher-desk.PNG',
     description: "An automated academic portal where students learn full-stack development and receive career training and support.",
     technologies: ['javascript', 'react', 'firebase'],
     live: 'https://www.elevateherspace.com/',
@@ -32,8 +32,8 @@ const projectArr = [
   {
     id: 3,
     title: "D Power Doctor's Channel",
-    mobileImage: 'images/powerdoctor-mob.png',
-    desktopImage: 'images/powerdoctor-desk.png',
+    mobileImage: 'images/powerdoctor-mob.PNG',
+    desktopImage: 'images/powerdoctor-desk.PNG',
     description: "An online channel where viewers can watch and read episodes and articles from D Power Doctor. Users can also purchase books whenever they become available.",
     technologies: ['javascript', 'react', 'firebase'],
     live: 'https://dpowerdoctor.vercel.app/',
@@ -42,8 +42,8 @@ const projectArr = [
   {
     id: 4,
     title: 'Vitafoam Store',
-    mobileImage: 'images/vitafoam-mob.png',
-    desktopImage: 'images/vitafoam-desk.png',
+    mobileImage: 'images/vitafoam-mob.PNG',
+    desktopImage: 'images/vitafoam-desk.PNG',
     description: "An e-commerce mobile app that allows customers to buy various products from Vitafoam. (For the best layout and user experience, view on a mobile device.)",
     technologies: ['javascript', 'react', 'firebase'],
     live: 'https://vitafoam-app.vercel.app/',
