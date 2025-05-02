@@ -1134,7 +1134,7 @@ button:hover {
   }
 
   .popup-btns {
-    width: 20vw;
+    /* width: 20vw; */
     margin-left: 70vw;
     margin-bottom: 0;
     z-index: 5;
