@@ -2,8 +2,8 @@ const projectArr = [
   {
       id: 0,
       title: 'Kasuwar Arewa App',
-      mobileImage: 'images/ka-mob.png',
-      desktopImage: 'images/ka-desk.png',
+      mobileImage: 'images/ka-mob.PNG',
+      desktopImage: 'images/ka-desk.PNG',
       description: 'An e-commerce mobile app that allows customers to buy various products and have them delivered with ease. (For the best layout and user experience, view on a mobile device.)',
       technologies: ['javascript', 'react', 'firebase'],
       live: 'https://kasuwararewa.vercel.app/',
