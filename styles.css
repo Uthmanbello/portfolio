@@ -792,11 +792,7 @@ button:hover {
     align-items: center;
     gap: 5vw;
     padding-right: 20vw;
-  }
-
-  .toggle-section:hover {
-    cursor: pointer;
-  }
+  }  
 
   .homed {
     display: flex;
@@ -854,7 +850,11 @@ button:hover {
 
   .toggle-section {
     margin-left: 5vw !important;
-  }  
+  }
+
+  .toggle-section:hover {
+    cursor: pointer;
+  }
 
   .projects {
     padding-top: 6vh;
