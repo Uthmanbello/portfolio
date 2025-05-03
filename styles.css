@@ -516,10 +516,6 @@ button:hover {
   flex-direction: column;
 }
 
-.languages h2 {
-  margin-left: 10px;
-}
-
 .sub-heading {
   font-size: 1.1rem;
 }
@@ -530,6 +526,10 @@ button:hover {
   flex-wrap: wrap;
   gap: 2vw;
   margin-top: -3vh;
+}
+
+.languages h2 {
+  padding-left: 10px;
 }
 
 .languages p {
@@ -851,6 +851,10 @@ button:hover {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .toggle-section {
+    margin-left: 5vw !important;
+  }  
 
   .projects {
     padding-top: 6vh;
